@@ -1,0 +1,73 @@
+import React, {useState} from 'react';
+import { Button, Form, FormGroup, Label, Input, Modal, ModalHeader, ModalBody } from 'reactstrap';
+
+const MonsterEdit = (props) => {
+    const[editcreature, setEditCreature] = useState(props.monsterToUpdate.creature);
+    const[editimage, setEditImage] = useState(props.monsterToUpdate.image);
+    const[editcampaign, setEditCampaign] = useState(props.monsterToUpdate.campaign);
+    const[edithitpoints, setEditHitpoints] = useState(props.monsterToUpdate.hitpoints);
+    const[editarmorclass, setEditArmorclass] = useState(props.monsterToUpdate.armorclass);
+    const[editspeed, setEditSpeed] = useState(props.monsterToUpdate.speed);
+    const[editrating, setEditRating] = useState(props.monsterToUpdate.rating);
+    const[editdescription, setEditDesc] = useState(props.monsterToUpdate.description);
+
+    const monsterUpdate = (event, monster) => {
+        event.preventDefault();
+        fetch(`http://localhost:4000/log/update/${props.monsterToUpdate.id}`, {
+            method: 'PUT',
+            body: JSON.stringify({log: {creature: editcreature, image: editimage, campaign: editcampaign, hitpoints: edithitpoints, armorclass: editarmorclass, speed: editspeed, rating: editrating, description: editdescription}}),
+            headers: new Headers({
+                'Content-Type': 'application/json',
+                'Authorization': `Bearer ${props.token}`
+            })
+        }).then((res) => {
+            props.fetchMonsters();
+            props.updateOff();
+        })
+    }
+    
+    return(
+        <Modal isOpen={true}>
+            <ModalHeader>Update a Creature!</ModalHeader>
+                <ModalBody>
+                    <Form onSubmit={monsterUpdate}>
+                        <FormGroup>
+                            <Label htmlFor="creature">Edit Creature:</Label>
+                            <Input name="creature" value={creature} onChange={(e) => setEditCreature(e.target.value)}/>
+                        </FormGroup>
+                        <FormGroup>
+                            <Label htmlFor="image">Edit Image</Label>
+                            <Input name="image" value={image} onChange={(e) => setEditImage(e.target.value)}/>
+                        </FormGroup>
+                        <FormGroup>
+                            <Label htmlFor="campaign">Edit Campaign:</Label>
+                            <Input name="campaign" value={campaign} onChange={(e) => setEditCampaign(e.target.value)}/>
+                        </FormGroup>
+                        <FormGroup>
+                            <Label htmlFor="hitpoints">Edit Hitpoints:</Label>
+                            <Input name="hitpoints" value={hitpoints} onChange={(e) => setEditHitpoints(e.target.value)}/>
+                        </FormGroup>
+                        <FormGroup>
+                            <Label htmlFor="armorclass">Edit Armor Class:</Label>
+                            <Input name="armorclass" value={armorclass} onChange={(e) => setEditArmorclass(e.target.value)}/>
+                        </FormGroup>
+                        <FormGroup>
+                            <Label htmlFor="speed">Edit Speed:</Label>
+                            <Input name="speed" value={speed} onChange={(e) => setEditSpeed(e.target.value)}/>
+                        </FormGroup>
+                        <FormGroup>
+                            <Label htmlFor="rating">Edit Rating:</Label>
+                            <Input name="rating" value={} onChange={(e) => setEditRating(e.target.value)}/>
+                        </FormGroup>
+                        <FormGroup>
+                            <Label htmlFor="description">Edit Description:</Label>
+                            <Input name="description" value={editDesc} onChange={(e) => setEditDesc(e.target.value)}/>
+                        </FormGroup>
+                    <Button type="submit">Update Monster!</Button>
+                </Form>
+            </ModalBody>
+        </Modal>
+    )
+}
+
+export default MonsterEdit;
