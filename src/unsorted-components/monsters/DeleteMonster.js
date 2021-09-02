@@ -1,10 +1,10 @@
 function deleteMonster(monsterId) {
     console.log(monsterId)
 
-    const fetchMonster = `http://localhost:4000/my-monsters/delete/${monsterId}`;
+    const deleteMonsterUrl = `http://localhost:4000/my-monsters/delete/${monsterId}`;
     const accessToken = localStorage.getItem('SessionToken')
 
-    fetch(fetchMonster, {
+    fetch(deleteMonsterUrl, {
         method: 'DELETE',
         headers: new Headers ({
             "Content-Type": "application/json",
