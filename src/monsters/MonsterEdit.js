@@ -13,9 +13,9 @@ const MonsterEdit = (props) => {
 
     const monsterUpdate = (event, monster) => {
         event.preventDefault();
-        fetch(`http://localhost:4000/log/update/${props.monsterToUpdate.id}`, {
+        fetch(`http://localhost:4000/my-monsters/update/${props.monsterToUpdate.id}`, {
             method: 'PUT',
-            body: JSON.stringify({log: {creature: editcreature, image: editimage, campaign: editcampaign, hitpoints: edithitpoints, armorclass: editarmorclass, speed: editspeed, rating: editrating, description: editdescription}}),
+            body: JSON.stringify({monster: {creature: editcreature, image: editimage, campaign: editcampaign, hitpoints: edithitpoints, armorclass: editarmorclass, speed: editspeed, rating: editrating, description: editdescription}}),
             headers: new Headers({
                 'Content-Type': 'application/json',
                 'Authorization': `Bearer ${props.token}`
@@ -33,35 +33,35 @@ const MonsterEdit = (props) => {
                     <Form onSubmit={monsterUpdate}>
                         <FormGroup>
                             <Label htmlFor="creature">Edit Creature:</Label>
-                            <Input name="creature" value={creature} onChange={(e) => setEditCreature(e.target.value)}/>
+                            <Input name="editcreature" value={editcreature} onChange={(e) => setEditCreature(e.target.value)}/>
                         </FormGroup>
                         <FormGroup>
                             <Label htmlFor="image">Edit Image</Label>
-                            <Input name="image" value={image} onChange={(e) => setEditImage(e.target.value)}/>
+                            <Input name="editimage" value={editimage} onChange={(e) => setEditImage(e.target.value)}/>
                         </FormGroup>
                         <FormGroup>
                             <Label htmlFor="campaign">Edit Campaign:</Label>
-                            <Input name="campaign" value={campaign} onChange={(e) => setEditCampaign(e.target.value)}/>
+                            <Input name="editcampaign" value={editcampaign} onChange={(e) => setEditCampaign(e.target.value)}/>
                         </FormGroup>
                         <FormGroup>
                             <Label htmlFor="hitpoints">Edit Hitpoints:</Label>
-                            <Input name="hitpoints" value={hitpoints} onChange={(e) => setEditHitpoints(e.target.value)}/>
+                            <Input name="editedithitpoints" value={edithitpoints} onChange={(e) => setEditHitpoints(e.target.value)}/>
                         </FormGroup>
                         <FormGroup>
                             <Label htmlFor="armorclass">Edit Armor Class:</Label>
-                            <Input name="armorclass" value={armorclass} onChange={(e) => setEditArmorclass(e.target.value)}/>
+                            <Input name="editarmorclass" value={editarmorclass} onChange={(e) => setEditArmorclass(e.target.value)}/>
                         </FormGroup>
                         <FormGroup>
                             <Label htmlFor="speed">Edit Speed:</Label>
-                            <Input name="speed" value={speed} onChange={(e) => setEditSpeed(e.target.value)}/>
+                            <Input name="editspeed" value={editspeed} onChange={(e) => setEditSpeed(e.target.value)}/>
                         </FormGroup>
                         <FormGroup>
                             <Label htmlFor="rating">Edit Rating:</Label>
-                            <Input name="rating" value={} onChange={(e) => setEditRating(e.target.value)}/>
+                            <Input name="editrating" value={editrating} onChange={(e) => setEditRating(e.target.value)}/>
                         </FormGroup>
                         <FormGroup>
                             <Label htmlFor="description">Edit Description:</Label>
-                            <Input name="description" value={editDesc} onChange={(e) => setEditDesc(e.target.value)}/>
+                            <Input name="editdescription" value={editdescription} onChange={(e) => setEditDesc(e.target.value)}/>
                         </FormGroup>
                     <Button type="submit">Update Monster!</Button>
                 </Form>

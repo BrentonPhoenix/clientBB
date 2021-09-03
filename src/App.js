@@ -1,9 +1,8 @@
-
 import React, {useState, useEffect} from "react";
 import Header from "./site/Header";
 import Auth from "./auth/Auth"
 import MonsterIndex from "./monsters/MonsterIndex";
-import Login from "./auth/Login"
+import LoginT from './auth/LoginTest'
 
 function App () {
   const [sessionToken, setSessionToken] = useState("");
@@ -26,9 +25,9 @@ function App () {
   }
 
   const protectedViews = () => {
-    return(sessionToken === localStorage.getItem("token") ? <MonsterIndex token = {sessionToken}/> : <Auth updateToken = {updateToken}/>)
+    return(sessionToken === localStorage.getItem("token") ? <LoginT/> : <Auth updateToken = {updateToken}/>)
   }
-
+{/* <MonsterIndex token = {sessionToken}/>  return to line 28* when monsterindex is functional*/}
   return (
     <div>
       <Header clickLogout={clearToken} />
@@ -37,7 +36,7 @@ function App () {
 
     </div>
   );
-}
+};
 
 export default App;
 
@@ -50,3 +49,24 @@ export default App;
 //     <div className="App">
 //    <Login/>
 
+
+
+//Richard
+// import React from 'react';
+// import 'bootstrap/dist/css/bootstrap.css'
+// import './App.css';
+
+// import Footer from './site/Footer';
+// import Header from './site/Header';
+// import {
+//   BrowserRouter as Router
+// } from 'react-router-dom';
+
+
+// function App() {
+//   return (
+//     <div className="App">
+//       <Router>
+//       <Header />
+//       </Router>
+//       <Footer />
