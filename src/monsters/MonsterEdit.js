@@ -33,35 +33,37 @@ const MonsterEdit = (props) => {
                     <Form onSubmit={monsterUpdate}>
                         <FormGroup>
                             <Label htmlFor="creature">Edit Creature:</Label>
-                            <Input name="editcreature" value={editcreature} onChange={(e) => setEditCreature(e.target.value)}/>
+
+                            <Input name="creature" value={editcreature} onChange={(e) => setEditCreature(e.target.value)}/>
                         </FormGroup>
                         <FormGroup>
                             <Label htmlFor="image">Edit Image</Label>
-                            <Input name="editimage" value={editimage} onChange={(e) => setEditImage(e.target.value)}/>
+                            <Input name="image" value={editimage} onChange={(e) => setEditImage(e.target.value)}/>
                         </FormGroup>
                         <FormGroup>
                             <Label htmlFor="campaign">Edit Campaign:</Label>
-                            <Input name="editcampaign" value={editcampaign} onChange={(e) => setEditCampaign(e.target.value)}/>
+                            <Input name="campaign" value={editcampaign} onChange={(e) => setEditCampaign(e.target.value)}/>
                         </FormGroup>
                         <FormGroup>
                             <Label htmlFor="hitpoints">Edit Hitpoints:</Label>
-                            <Input name="editedithitpoints" value={edithitpoints} onChange={(e) => setEditHitpoints(e.target.value)}/>
+                            <Input name="hitpoints" value={edithitpoints} onChange={(e) => setEditHitpoints(e.target.value)}/>
                         </FormGroup>
                         <FormGroup>
                             <Label htmlFor="armorclass">Edit Armor Class:</Label>
-                            <Input name="editarmorclass" value={editarmorclass} onChange={(e) => setEditArmorclass(e.target.value)}/>
+                            <Input name="armorclass" value={editarmorclass} onChange={(e) => setEditArmorclass(e.target.value)}/>
                         </FormGroup>
                         <FormGroup>
                             <Label htmlFor="speed">Edit Speed:</Label>
-                            <Input name="editspeed" value={editspeed} onChange={(e) => setEditSpeed(e.target.value)}/>
+                            <Input name="speed" value={editspeed} onChange={(e) => setEditSpeed(e.target.value)}/>
                         </FormGroup>
                         <FormGroup>
                             <Label htmlFor="rating">Edit Rating:</Label>
-                            <Input name="editrating" value={editrating} onChange={(e) => setEditRating(e.target.value)}/>
+                            <Input name="rating" value={editrating} onChange={(e) => setEditRating(e.target.value)}/>
                         </FormGroup>
                         <FormGroup>
                             <Label htmlFor="description">Edit Description:</Label>
-                            <Input name="editdescription" value={editdescription} onChange={(e) => setEditDesc(e.target.value)}/>
+                            <Input name="description" value={editdescription} onChange={(e) => setEditDesc(e.target.value)}/>
+
                         </FormGroup>
                     <Button type="submit">Update Monster!</Button>
                 </Form>

@@ -31,7 +31,7 @@ const MonsterCreate = (props) => {
             setSpeed('');
             setRating('');
             setDescription('');
-            props.fetchWorkouts();
+            props.fetchMonsters();//Fixed typo
         })
     }
 
