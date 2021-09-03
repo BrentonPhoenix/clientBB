@@ -1,12 +1,15 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
+import "bootstrap/dist/css/bootstrap.min.css";
 import {
     Navbar, NavbarBrand, Nav, NavItem, NavLink,
     Dropdown, DropdownToggle, DropdownMenu, DropdownItem
 } from 'reactstrap';
 
+
 const OurMenu = (props) => {
     const [dropdownOpen, setDropdownOpen] = useState(false);
     const toggle = () => setDropdownOpen(prevState => !prevState);
+    
 
     return(
         <Navbar>
@@ -16,15 +19,16 @@ const OurMenu = (props) => {
                 <DropdownToggle caret>
                     App Menu
                 </DropdownToggle>
-            </Dropdown>
-            <DropdownMenu>
-                <DropdownItem header>User</DropdownItem>
-                <DropdownItem>Login/Register</DropdownItem>
-                <DropdownItem divider />
+            <DropdownMenu right>
                 <DropdownItem header>Monsters</DropdownItem>
                 <DropdownItem>Create A Monster</DropdownItem>
                 <DropdownItem>View/Edit Your Monsters</DropdownItem>
+                <DropdownItem divider />
+                <DropdownItem header>User</DropdownItem>
+                <DropdownItem>Login/Register</DropdownItem>
+                <DropdownItem>Logout</DropdownItem>
             </DropdownMenu>
+            </Dropdown>
             </NavbarBrand>
         </Navbar>
     );
