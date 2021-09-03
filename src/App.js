@@ -3,6 +3,7 @@ import React, {useState, useEffect} from "react";
 import Header from "./site/Header";
 import Auth from "./auth/Auth"
 import MonsterIndex from "./monsters/MonsterIndex";
+import Login from "./auth/Login"
 
 function App () {
   const [sessionToken, setSessionToken] = useState("");
@@ -32,6 +33,7 @@ function App () {
     <div>
       <Header clickLogout={clearToken} />
       {protectedViews()}
+
 
     </div>
   );
