@@ -12,7 +12,7 @@ const Auth = (props) => {
         <Container className="auth-container">
             <Row>
                     {/* terinary here to switch between Login and Register */}
-            <Login/>    <Register/>
+            <Login updateToken={props.updateToken}/>    <Register updateToken={props.updateToken}/>
             </Row>
         </Container>
     )

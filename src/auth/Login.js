@@ -34,13 +34,13 @@ const Login = (props) => {
                 <FormGroup>
                     <Label htmlFor="email">Email</Label>
                     <br/>
-                    <Input placeholder="email" type="text" value={email}/>
+                    <Input placeholder="email" type="text" value={email} onChange={(e) => setEmail(e.target.value)}/>
                 </FormGroup>
                 <br/>
                 <FormGroup>
                 <Label htmlFor="password">Password</Label>
                 <br/>
-                    <Input placeholder="password" type="password" value="password"/>
+                    <Input type="password" value={password} onChange={(e)=> setPassword(e.target.value)}/>
                 </FormGroup>
                 <Button type='submit'>Login</Button>
             </Form>

@@ -2,6 +2,7 @@ import React, {useState, useEffect} from "react";
 import Header from "./site/Header";
 import Auth from "./auth/Auth"
 import MonsterIndex from "./monsters/MonsterIndex";
+import LoginT from './auth/LoginTest'
 
 function App () {
   const [sessionToken, setSessionToken] = useState("");
@@ -24,9 +25,9 @@ function App () {
   }
 
   const protectedViews = () => {
-    return(sessionToken === localStorage.getItem("token") ? <MonsterIndex token = {sessionToken}/> : <Auth updateToken = {updateToken}/>)
+    return(sessionToken === localStorage.getItem("token") ? <LoginT/> : <Auth updateToken = {updateToken}/>)
   }
-
+{/* <MonsterIndex token = {sessionToken}/>  return to line 28* when monsterindex is functional*/}
   return (
     <div>
       <Header clickLogout={clearToken} />
