@@ -7,9 +7,12 @@ const MonsterIndex = (props) => {
     const [monsters, setMonsters] = useState([]);
     const [updateActive, setUpdateActive] = useState(false);
     const [monsterToUpdate, setMonsterToUpdate] = useState({});
+    const fetchMonstersUrl = "http://localhost:4000/my-monsters/"
+// is this the correct endpoint? is there an underscore, or just a space in owner_id?
+
 
     const fetchMonsters = () => {
-        fetch("http://localhost:4000/", {
+        fetch(fetchMonstersUrl, {
             method: "GET",
             headers: new Headers ({
                 "Content-Type": "application/json",

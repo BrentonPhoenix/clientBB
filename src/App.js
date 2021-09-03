@@ -25,7 +25,7 @@ function App () {
   }
 
   const protectedViews = () => {
-    return(sessionToken === localStorage.getItem("token") ? <LoginT/> : <Auth updateToken = {updateToken}/>)
+    return(sessionToken === localStorage.getItem("token") ? <MonsterIndex token = {sessionToken}/> : <Auth updateToken = {updateToken}/>)
   }
 {/* <MonsterIndex token = {sessionToken}/>  return to line 28* when monsterindex is functional*/}
   return (
