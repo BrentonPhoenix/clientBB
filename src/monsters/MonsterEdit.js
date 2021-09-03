@@ -33,6 +33,7 @@ const MonsterEdit = (props) => {
                     <Form onSubmit={monsterUpdate}>
                         <FormGroup>
                             <Label htmlFor="creature">Edit Creature:</Label>
+
                             <Input name="creature" value={editcreature} onChange={(e) => setEditCreature(e.target.value)}/>
                         </FormGroup>
                         <FormGroup>
@@ -62,6 +63,7 @@ const MonsterEdit = (props) => {
                         <FormGroup>
                             <Label htmlFor="description">Edit Description:</Label>
                             <Input name="description" value={editdescription} onChange={(e) => setEditDesc(e.target.value)}/>
+
                         </FormGroup>
                     <Button type="submit">Update Monster!</Button>
                 </Form>
