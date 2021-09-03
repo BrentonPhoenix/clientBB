@@ -15,7 +15,7 @@ const MonsterEdit = (props) => {
         event.preventDefault();
         fetch(`http://localhost:4000/my-monsters/update/${props.monsterToUpdate.id}`, {
             method: 'PUT',
-            body: JSON.stringify({monster: {creature: editcreature, image: editimage, campaign: editcampaign, hitpoints: edithitpoints, armorclass: editarmorclass, speed: editspeed, rating: editrating, description: editdescription}}),
+            body: JSON.stringify({log: {creature: editcreature, image: editimage, campaign: editcampaign, hitpoints: edithitpoints, armorclass: editarmorclass, speed: editspeed, rating: editrating, description: editdescription}}),
             headers: new Headers({
                 'Content-Type': 'application/json',
                 'Authorization': `Bearer ${props.token}`
