@@ -1,4 +1,3 @@
-
 import React, {useState, useEffect} from "react";
 import Header from "./site/Header";
 import Auth from "./auth/Auth"
@@ -33,9 +32,10 @@ function App () {
       <Header clickLogout={clearToken} />
       {protectedViews()}
 
+
     </div>
   );
-}
+};
 
 export default App;
 
@@ -48,3 +48,24 @@ export default App;
 //     <div className="App">
 //    <Login/>
 
+
+
+//Richard
+// import React from 'react';
+// import 'bootstrap/dist/css/bootstrap.css'
+// import './App.css';
+
+// import Footer from './site/Footer';
+// import Header from './site/Header';
+// import {
+//   BrowserRouter as Router
+// } from 'react-router-dom';
+
+
+// function App() {
+//   return (
+//     <div className="App">
+//       <Router>
+//       <Header />
+//       </Router>
+//       <Footer />
