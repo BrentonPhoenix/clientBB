@@ -1,19 +1,20 @@
-import React from 'react'
-import { Container, Row, Col } from 'reactstrap'
+import React, {useState} from 'react'
+import { Container, Button } from 'reactstrap'
 import Register from './Register'
 import Login from './Login'
 
 
 
 const Auth = (props) => {
-    
+   const [login,setLogin] = useState(false) 
 
-    return(
+    let flipLogin = ()=> setLogin(!login)
+   
+   return(
         <Container className="auth-container">
-            <Row>
-                    {/* terinary here to switch between Login and Register */}
-            <Login updateToken={props.updateToken}/>    <Register updateToken={props.updateToken}/>
-            </Row>
+         
+           {login ? <Login updateToken={props.updateToken}/>  :  <Register updateToken={props.updateToken}/>}
+           <Button onClick={flipLogin}>Need to {login ? <>Register</> : <>Login</>}</Button>
         </Container>
     )
 }
