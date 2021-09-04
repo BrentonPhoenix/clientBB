@@ -1,15 +1,19 @@
 import React, {useState, useEffect} from "react";
 import MonsterCreate from "./MonsterCreate";
-import MonsterTable from "./MonsterTable";
+import MonsterTable2 from "./MonsterCarousel";
 import MonsterEdit from "./MonsterEdit";
+// import MonsterTable from "MonsterTable"
 
 const MonsterIndex = (props) => {
     const [monsters, setMonsters] = useState([]);
     const [updateActive, setUpdateActive] = useState(false);
     const [monsterToUpdate, setMonsterToUpdate] = useState({});
+    const fetchMonstersUrl = "http://localhost:4000/my-monsters/"
+// is this the correct endpoint? is there an underscore, or just a space in owner_id?
+
 
     const fetchMonsters = () => {
-        fetch("http://localhost:4000/", {
+        fetch(fetchMonstersUrl, {
             method: "GET",
             headers: new Headers ({
                 "Content-Type": "application/json",
@@ -41,13 +45,13 @@ const MonsterIndex = (props) => {
 
     return(
         <div>
-            <MonsterCreate fetchMonsters={fetchMonsters} token={props.token}/>
 
             
-            <MonsterTable monsters={monsters} editUpdateMonster={editUpdateMonster} updateOn={updateOn} fetchMonsters={fetchMonsters} token={props.token}/>
+            <MonsterTable2 monsters={monsters} editUpdateMonster={editUpdateMonster} updateOn={updateOn} fetchMonsters={fetchMonsters} token={props.token}/>
             
             {updateActive ? <MonsterEdit monsterToUpdate={monsterToUpdate} updateOff={updateOff} token={props.token} fetchMonsters=
             {fetchMonsters}/> : <></>}
+            <MonsterCreate fetchMonsters={fetchMonsters} token={props.token}/>
         </div>
 
     )

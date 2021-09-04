@@ -33,13 +33,13 @@ const Login = (props) => {
             <Form onSubmit={handleSubmit}>
                 <FormGroup>
                     <Label htmlFor="email">Email</Label>
-                    <br/>
+                    
                     <Input placeholder="email" type="text" value={email} onChange={(e) => setEmail(e.target.value)}/>
                 </FormGroup>
                 <br/>
                 <FormGroup>
                 <Label htmlFor="password">Password</Label>
-                <br/>
+                
                     <Input type="password" value={password} onChange={(e)=> setPassword(e.target.value)}/>
                 </FormGroup>
                 <Button type='submit'>Login</Button>

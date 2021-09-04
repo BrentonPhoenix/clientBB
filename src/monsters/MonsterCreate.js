@@ -15,7 +15,7 @@ const MonsterCreate = (props) => {
         e.preventDefault();
         fetch('http://localhost:4000/my-monsters/create', {
             method: 'POST',
-            body: JSON.stringify({log: {creature: creature, image: image, campaign: campaign, hitpoints: hitpoints, armorclass: armorclass, speed: speed, rating: rating, description: description}}),
+            body: JSON.stringify({monster: {creature: creature, image: image, campaign: campaign, hitpoints: hitpoints, armorclass: armorclass, speed: speed, rating: rating, description: description}}),
             headers: new Headers({
                 'Content-Type': 'application/json',
                 'Authorization': `Bearer ${props.token}`
