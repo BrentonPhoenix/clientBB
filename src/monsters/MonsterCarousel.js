@@ -107,9 +107,9 @@ const slides = props.monsters.map((monster)=>{
             onExited={() => setAnimating(false)}
             key={items.id}>
           
-            <div><h1>Monster: {monster.creature} 
+            {/* <div><h1>Monster: {monster.creature} 
             <br/>
-            {monster.image}</h1></div>
+            {monster.image}</h1></div> */}
            
           </CarouselItem>
            

@@ -34,7 +34,7 @@ const monsterMapper = () =>{
                 key={index}
                 {monster.id}
                 {monster.creature}
-                {monster.image}
+                {/* {monster.image} */}
 
                 <Button color="primary" onClick={()=> {props.editUpdateMonster(monster); props.updateOn()}}>Update Monster</Button>
                 <Button color="secondary" onClick={()=> {deleteMonster(monster)}}>Delete Monster</Button>
