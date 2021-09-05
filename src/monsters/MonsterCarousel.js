@@ -1,9 +1,11 @@
 import React, {useState, useEffect} from "react";
-import {Button,Carousel,
+import {Button,Carousel, 
     CarouselItem,
     CarouselControl,
     CarouselIndicators,
     CarouselCaption} from "reactstrap"
+    
+
 
 
 const MonsterTable2 = (props) =>{
@@ -106,11 +108,34 @@ const slides = props.monsters.map((monster)=>{
             onExiting={() => setAnimating(true)}
             onExited={() => setAnimating(false)}
             key={items.id}>
-          
-            <div><h1>Monster: {monster.creature} 
+            {/* <div><h1>Monster: {monster.creature} 
             <br/>
-            {monster.image}</h1></div>
-           
+            {monster.image}</h1></div> */}
+            <div className="slideDiv">
+            <div className="upperDiv">
+              {/* image and description */}
+              <div className="monsterImage">
+                <img src={monster.image} className="img-fluid"/>
+              </div>
+              <div className="monsterDescription">
+                <h3>Description</h3>
+                <br/>
+                <p>{monster.description}</p>
+              </div>
+            </div>
+            <div className="info">
+              <ul>
+                <li>Name: {monster.creature}</li>
+                <li>ID: {monster.id}</li>
+                <li>Campaign: {monster.campaign}</li>
+                <li>HP: {monster.hitpoints}</li>
+                <li>AC: {monster.armorclass}</li>
+                <li>Speed: {monster.speed}</li>
+                <li>Rating: {monster.rating}</li>
+      
+              </ul>
+            </div>
+           </div>
           </CarouselItem>
            
 
@@ -126,15 +151,15 @@ return(
     <h4>img link</h4>
     {/* {monsterMapper()} */}
 
-<Carousel
+<Carousel className="mainDiv"
 activeIndex={activeIndex}
 next={next}
 previous={previous}
 >
 <CarouselIndicators items={props.monsters} activeIndex={activeIndex} onClickHandler={goToIndex} />
 {slides}
-<CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} />
-<CarouselControl direction="next" directionText="Next" onClickHandler={next} />
+<CarouselControl direction="<" directionText="<" onClickHandler={previous} />
+<CarouselControl direction=">" directionText=">" onClickHandler={next} />
 </Carousel>
     </>
 )
