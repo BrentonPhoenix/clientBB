@@ -4,6 +4,8 @@ import {
     Navbar, NavbarBrand, Nav, NavItem, NavLink,
     Dropdown, DropdownToggle, DropdownMenu, DropdownItem
 } from 'reactstrap';
+import { Route, Link, Switch} from 'react-router-dom'
+import MonsterIndex from "../monsters/MonsterIndex"
 
 
 const OurMenu = (props) => {
@@ -12,7 +14,7 @@ const OurMenu = (props) => {
     
 
     return(
-        <Navbar>
+        <Navbar className="header">
             <h4>Team 2 - Dungeons & Dragons Monster App</h4>
             <NavbarBrand>
             <Dropdown isOpen={dropdownOpen} toggle={toggle}>
@@ -30,6 +32,7 @@ const OurMenu = (props) => {
             </DropdownMenu>
             </Dropdown>
             </NavbarBrand>
+           
         </Navbar>
     );
 };

@@ -2,7 +2,9 @@ import React, {useState, useEffect} from "react";
 import Header from "./site/Header";
 import Auth from "./auth/Auth"
 import MonsterIndex from "./monsters/MonsterIndex";
+import { BrowserRouter as Router } from "react-router-dom";
 // import LoginT from './auth/LoginTest'
+import './App.css'
 
 function App () {
   const [sessionToken, setSessionToken] = useState("");
@@ -30,7 +32,10 @@ function App () {
 {/* <MonsterIndex token = {sessionToken}/>  return to line 28* when monsterindex is functional*/}
   return (
     <div>
+
       <Header clickLogout={clearToken} />
+      <MonsterTable/>
+
       {protectedViews()}
 
 

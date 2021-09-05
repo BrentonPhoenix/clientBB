@@ -10,6 +10,8 @@ const MonsterEdit = (props) => {
     const[editspeed, setEditSpeed] = useState(props.monsterToUpdate.speed);
     const[editrating, setEditRating] = useState(props.monsterToUpdate.rating);
     const[editdescription, setEditDesc] = useState(props.monsterToUpdate.description);
+    
+
 
     const monsterUpdate = (event, monster) => {
         event.preventDefault();
@@ -26,10 +28,12 @@ const MonsterEdit = (props) => {
         })
     }
     
+    
     return(
         <Modal isOpen={true}>
-            <ModalHeader>Update a Creature!</ModalHeader>
+            <ModalHeader> Update a Creature!</ModalHeader>
                 <ModalBody>
+                   
                     <Form onSubmit={monsterUpdate}>
                         <FormGroup>
                             <Label htmlFor="creature">Edit Creature:</Label>
@@ -66,6 +70,7 @@ const MonsterEdit = (props) => {
 
                         </FormGroup>
                     <Button type="submit">Update Monster!</Button>
+                    <Button close/>
                 </Form>
             </ModalBody>
         </Modal>
