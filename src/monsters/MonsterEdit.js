@@ -10,12 +10,14 @@ const MonsterEdit = (props) => {
     const[editspeed, setEditSpeed] = useState(props.monsterToUpdate.speed);
     const[editrating, setEditRating] = useState(props.monsterToUpdate.rating);
     const[editdescription, setEditDesc] = useState(props.monsterToUpdate.description);
+    
+
 
     const monsterUpdate = (event, monster) => {
         event.preventDefault();
         fetch(`http://localhost:4000/my-monsters/update/${props.monsterToUpdate.id}`, {
             method: 'PUT',
-            body: JSON.stringify({log: {creature: editcreature, image: editimage, campaign: editcampaign, hitpoints: edithitpoints, armorclass: editarmorclass, speed: editspeed, rating: editrating, description: editdescription}}),
+            body: JSON.stringify({monster: {creature: editcreature, image: editimage, campaign: editcampaign, hitpoints: edithitpoints, armorclass: editarmorclass, speed: editspeed, rating: editrating, description: editdescription}}),
             headers: new Headers({
                 'Content-Type': 'application/json',
                 'Authorization': `Bearer ${props.token}`
@@ -26,10 +28,12 @@ const MonsterEdit = (props) => {
         })
     }
     
+    
     return(
         <Modal isOpen={true}>
-            <ModalHeader>Update a Creature!</ModalHeader>
+            <ModalHeader> Update a Creature!</ModalHeader>
                 <ModalBody>
+                   
                     <Form onSubmit={monsterUpdate}>
                         <FormGroup>
                             <Label htmlFor="creature">Edit Creature:</Label>
@@ -66,6 +70,7 @@ const MonsterEdit = (props) => {
 
                         </FormGroup>
                     <Button type="submit">Update Monster!</Button>
+                    <Button close/>
                 </Form>
             </ModalBody>
         </Modal>

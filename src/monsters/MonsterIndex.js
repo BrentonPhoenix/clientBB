@@ -2,6 +2,7 @@ import React, {useState, useEffect} from "react";
 import MonsterCreate from "./MonsterCreate";
 import MonsterTable from "./MonsterTable";
 import MonsterEdit from "./MonsterEdit";
+// import MonsterCaro from "../unsorted-components/MonsterCaro"
 
 const MonsterIndex = (props) => {
     const [monsters, setMonsters] = useState([]);
@@ -47,6 +48,7 @@ const MonsterIndex = (props) => {
             <MonsterCreate fetchMonsters={fetchMonsters} token={props.token}/>
 
             
+            {/* <MonsterCaro monsters={monsters} editUpdateMonster={editUpdateMonster} updateOn={updateOn} fetchMonsters={fetchMonsters} token={props.token}/> */}
             <MonsterTable monsters={monsters} editUpdateMonster={editUpdateMonster} updateOn={updateOn} fetchMonsters={fetchMonsters} token={props.token}/>
             
             {updateActive ? <MonsterEdit monsterToUpdate={monsterToUpdate} updateOff={updateOff} token={props.token} fetchMonsters=

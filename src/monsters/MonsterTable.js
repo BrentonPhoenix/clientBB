@@ -3,10 +3,10 @@ import {Button} from "reactstrap"
 
 
 const MonsterTable = (props) =>{
-const deleteMonster = (monsterId) => {
-    console.log(monsterId)
+const deleteMonster = (monster) => {
+    // console.log(monster)
 
-    const deleteMonsterUrl = `http://localhost:4000/my-monsters/delete/${monsterId}`;
+    const deleteMonsterUrl = `http://localhost:4000/my-monsters/delete/${monster.Id}`;
     // const accessToken = localStorage.getItem('sessionToken')
 
     fetch(deleteMonsterUrl, {
@@ -33,8 +33,8 @@ const monsterMapper = () =>{
                 {monster.id}
                 {monster.creature}
                 {monster.image}
-                <Button color="#03FE2A" onClick={()=> {props.editUpdateMonster(monster); props.updateOn()}}>Update Monster</Button>
-                <Button color="#193A73" onClick={()=> {deleteMonster(monster)}}>Delete Monster</Button>
+                <Button color="primary" onClick={()=> {props.editUpdateMonster(monster); props.updateOn()}}>Update Monster</Button>
+                <Button color="secondary" onClick={()=> {deleteMonster(monster)}}>Delete Monster</Button>
             </div>
 
         )
