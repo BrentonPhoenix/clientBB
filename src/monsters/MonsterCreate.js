@@ -3,7 +3,7 @@ import {Button, Form, FormGroup, Label, Input} from 'reactstrap';
 
 const MonsterCreate = (props) => {
     const [creature, setCreature] = useState('');
-    const [image, setImage] = useState('');
+    const [image, setImage] = useState('https://images.unsplash.com/photo-1554727225-ee66ff0a1bc5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1370&q=80');
     const [campaign, setCampaign] = useState('');
     const [hitpoints, setHitpoints] = useState('');
     const [armorclass, setArmorclass] = useState('');
