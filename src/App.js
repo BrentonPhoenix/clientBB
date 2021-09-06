@@ -36,8 +36,6 @@ function App () {
 
       <Header clickLogout={clearToken} />
 
-      {/* <MonsterTable/> */}
-      
 
       
       {protectedViews()}
