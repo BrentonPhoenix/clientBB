@@ -69,10 +69,12 @@ const MonsterCreate = (props) => {
                 <Input name="rating" value={rating} onChange={(e) => setRating(e.target.value)}/>
             </FormGroup>
             <FormGroup>
-                <Label className="text" htmlFor="description">Description:</Label>
-                <Input name="description" value={description} onChange={(e) => setDescription(e.target.value)}/>
+
+                <Label htmlFor="description">Description:</Label>
+                <Input name="description" value={description} onChange={(e) => setDescription(e.target.value)}/>&nbsp; &nbsp;
+
             </FormGroup>
-            <Button type="submit">Click to Create</Button>
+            <Button color="success" type="submit">Click to Create</Button>
         </Form>
         </>
     )

@@ -1,6 +1,6 @@
 
 import React from "react";
-import {Button} from "reactstrap"
+import {Button, List, } from "reactstrap"
 
 
 const MonsterTable = (props) =>{
@@ -29,30 +29,60 @@ const deleteMonster = (monster) => {
 const monsterMapper = () =>{
     return props.monsters.map((monster, index)=>{
         return(
-            <div>
+            <List type="unstyled">
+                <br />
                 {/* Do we need this key? */}
-                key={index}
-                {monster.id}
-                {monster.creature}
-                {monster.image}
-
-                <Button color="primary" onClick={()=> {props.editUpdateMonster(monster); props.updateOn()}}>Update Monster</Button>
-                <Button color="secondary" onClick={()=> {deleteMonster(monster)}}>Delete Monster</Button>
-
-            </div>
+                {/* key={index} */}
+                <ul>
+                    {/* <li>{monster.id}</li> */}
+                    {/* <Text style={{fontWeight: "bold"}}></Text> */}
+                    <li className="monster">Monster Name:  {monster.creature}</li> &nbsp; 
+                    <ul>
+                        <li className="hp">HP: </li>
+                            <ul>
+                            <li>{monster.hitpoints}</li>
+                            </ul>
+                        <li className="ac">AC: </li>
+                            <ul>
+                            <li>{monster.armorclass}</li>
+                            </ul>
+                        <li className="speed">Speed: </li>
+                            <ul>
+                            <li>{monster.speed}</li>
+                            </ul>
+                        <li className="rating">Rating: </li>
+                            <ul>
+                            <li>{monster.rating}</li>
+                            </ul>
+                        <li className="description">Description: </li>
+                            <ul>
+                            <li>{monster.description}</li>
+                            </ul>
+                        <li className="url">Monster Image URL:  </li>
+                            <ul>
+                            <li>{monster.image}</li>
+                            </ul>
+                        &nbsp; &nbsp;
+                    </ul>    
+                    
+                </ul>
+                
+                <Button color="primary" size="sm" onClick={()=> {props.editUpdateMonster(monster); props.updateOn()}}>Update Monster</Button> &nbsp; &nbsp; &nbsp;
+                <Button color="danger" size="sm" onClick={()=> {deleteMonster(monster)}}>Delete Monster</Button>
+                <br />
+            </List>
 
         )
     })
 }
 
 return(
-    <>
+    <div>
+        &nbsp; &nbsp;
     <h2>My Monsters</h2>
     <hr/>
-    <h3>Monster Name</h3>
-    <h4>img link</h4>
     {monsterMapper()}
-    </>
+    </div>
 )
 }
 

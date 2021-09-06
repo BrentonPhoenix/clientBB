@@ -4,7 +4,7 @@ import {
     Navbar, NavbarBrand, Nav, NavItem, NavLink,
     Dropdown, DropdownToggle, DropdownMenu, DropdownItem
 } from 'reactstrap';
-import { Route, Link, Switch} from 'react-router-dom'
+import { Router, Route, Link, Switch } from 'react-router-dom'
 import MonsterIndex from "../monsters/MonsterIndex"
 
 
@@ -23,16 +23,16 @@ const OurMenu = (props) => {
                 </DropdownToggle>
             <DropdownMenu right>
                 <DropdownItem header>Monsters</DropdownItem>
-                <DropdownItem>Create A Monster</DropdownItem>
-                <DropdownItem>View/Edit Your Monsters</DropdownItem>
+                <DropdownItem href="../monsters/MonsterCreate">Create A Monster</DropdownItem>
+                <DropdownItem href="../monsters/MonsterEdit">View/Edit Your Monsters</DropdownItem>
                 <DropdownItem divider />
                 <DropdownItem header>User</DropdownItem>
-                <DropdownItem>Login/Register</DropdownItem>
-                <DropdownItem>Logout</DropdownItem>
+                <DropdownItem href="../auth/Login">Login</DropdownItem>
+                <DropdownItem href="../auth/Register">Register</DropdownItem>
+                <DropdownItem onClick={props.clickLogout}>Logout</DropdownItem>
             </DropdownMenu>
             </Dropdown>
             </NavbarBrand>
-           
         </Navbar>
     );
 };

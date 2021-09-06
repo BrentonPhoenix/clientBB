@@ -6,7 +6,9 @@ import MonsterIndex from "./monsters/MonsterIndex";
 import { BrowserRouter as Router } from "react-router-dom";
 // import LoginT from './auth/LoginTest'
 import './App.css'
+
 import Footer from "./site/Footer";
+
 
 function App () {
   const [sessionToken, setSessionToken] = useState("");
@@ -36,12 +38,13 @@ function App () {
     <div>
 
       <Header clickLogout={clearToken} />
-      
+
 
       {protectedViews()}
       <Footer/>
 
 
+      {/* <Footer/> */}
     </div>
   );
 };

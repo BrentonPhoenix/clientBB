@@ -9,12 +9,20 @@ const Footer = () => {
     return(
         <footer>
             <Row>
-            <Col md="10" id="colTwo">
+            <Col md="8" id="colTwo">
                 <Button>Switch Font!</Button>
             </Col>
-            <Col md="2" id="colOne">
+            <Col md="4" id="colOne">
                 <p>&copy; Team 2, 2021</p>
+                <p>Pheonix</p>
+                <p>Christian</p>
+                <p>Richard</p>
+                <p>Rhianna</p>
+
             </Col>
+
+               
+
             </Row>
         </footer>
     );

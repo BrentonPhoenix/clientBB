@@ -19,6 +19,10 @@
   padding: '00px'
 } */
 
+/* body{
+  background-image: ;
+} */
+
 
 
 .router{
@@ -142,8 +146,9 @@ ul{
   /* background-color: A8BA9A; */
 
 }
-.slideDiv{
-  border: 5px solid black;
+/* .slideDiv{ */
+
+/*   border: 5px solid black;
   padding: 10px 10px 10px 10px;
   background-color: rgb(219, 185, 87, .5);
   margin: 2px;
@@ -169,4 +174,49 @@ border: 2px solid black;
 
 .slideDiv:hover{
   opacity:.5;
+} */
+
+  opacity: 60%;
+  padding: 10px 10px 10px 10px;
+  background-color: #DBB957;
 }
+
+/* .sideDiv:hover{
+  opacity: .5;
+} */
+
+.monster {
+  font-weight: bold;
+}
+
+.hp {
+  font-weight: bold;
+}
+.ac {
+  font-weight: bold;
+}
+.speed {
+  font-weight: bold;
+}
+.rating {
+  font-weight: bold;
+}
+.description {
+  font-weight: bold;
+}
+.url {
+  font-weight: bold;
+}
+
+.buttons{
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.close-button{
+  border-radius: 5px;
+  background-color: red;
+  
+}
+
