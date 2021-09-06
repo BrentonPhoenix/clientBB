@@ -66,5 +66,6 @@ export default MonsterIndex;
 
 
 
+
             // {/* <MonsterCaro monsters={monsters} editUpdateMonster={editUpdateMonster} updateOn={updateOn} fetchMonsters={fetchMonsters} token={props.token}/> */}
             // <MonsterTable monsters={monsters} editUpdateMonster={editUpdateMonster} updateOn={updateOn} fetchMonsters={fetchMonsters} token={props.token}/>

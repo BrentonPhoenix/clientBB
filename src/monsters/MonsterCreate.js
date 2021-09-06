@@ -70,9 +70,9 @@ const MonsterCreate = (props) => {
             </FormGroup>
             <FormGroup>
                 <Label htmlFor="description">Description:</Label>
-                <Input name="description" value={description} onChange={(e) => setDescription(e.target.value)}/>
+                <Input name="description" value={description} onChange={(e) => setDescription(e.target.value)}/>&nbsp; &nbsp;
             </FormGroup>
-            <Button type="submit">Click to Create</Button>
+            <Button color="success" type="submit">Click to Create</Button>
         </Form>
         </>
     )

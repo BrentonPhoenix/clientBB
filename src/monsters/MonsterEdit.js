@@ -67,10 +67,13 @@ const MonsterEdit = (props) => {
                         <FormGroup>
                             <Label htmlFor="description">Edit Description:</Label>
                             <Input name="description" value={editdescription} onChange={(e) => setEditDesc(e.target.value)}/>
-
+                            &nbsp;
                         </FormGroup>
-                    <Button type="submit">Update Monster!</Button>
-                    <Button close/>
+                        <div className="buttons">
+                    <Button color="primary" type="submit">Update Monster!</Button>
+                    <Button className="close-button" close><span aria-hidden="true">Close</span></Button>
+                    {/* <Button className="close-button" close/> */}
+                    </div>
                 </Form>
             </ModalBody>
         </Modal>
