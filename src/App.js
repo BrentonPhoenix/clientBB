@@ -34,7 +34,6 @@ function App () {
     <div>
 
       <Header clickLogout={clearToken} />
-      
 
       {protectedViews()}
 
