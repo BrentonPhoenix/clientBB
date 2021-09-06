@@ -31,13 +31,18 @@ const monsterMapper = () =>{
         return(
             <div>
                 {/* Do we need this key? */}
-                key={index}
-                {monster.id}
-                {monster.creature}
-                {monster.image}
+                {/* key={index}
+                {monster.id} */}
+                {monster.creature}:
+                {/* {monster.image} */}
+                <br />
+                
 
                 <Button color="primary" onClick={()=> {props.editUpdateMonster(monster); props.updateOn()}}>Update Monster</Button>
                 <Button color="secondary" onClick={()=> {deleteMonster(monster)}}>Delete Monster</Button>
+                <br/>
+                <br/>
+                
 
             </div>
 
@@ -47,10 +52,15 @@ const monsterMapper = () =>{
 
 return(
     <>
+    <br />
+    <br />
+    <br />
+    <br />
+
     <h2>My Monsters</h2>
     <hr/>
-    <h3>Monster Name</h3>
-    <h4>img link</h4>
+    {/* <h3>Monster Name</h3>
+    <h4>img link</h4> */}
     {monsterMapper()}
     </>
 )

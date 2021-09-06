@@ -70,7 +70,10 @@ const MonsterEdit = (props) => {
 
                         </FormGroup>
                     <Button type="submit">Update Monster!</Button>
-                    <Button close/>
+                    <br/>
+                    <br/>
+                    <Button  type="submit">Cancel</Button>
+                    {/* What exactly do we want? */}
                 </Form>
             </ModalBody>
         </Modal>

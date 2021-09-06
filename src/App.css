@@ -3,7 +3,7 @@
   text-align: center;
 }
 
-
+/* 
 .header {
   width: 100%;
   height: 50px;
@@ -15,4 +15,115 @@
 .header-route{
   flex: 1;
   padding: '00px'
+} */
+
+
+
+.router{
+  border: 5px solid black;
+  height: 100px;
+  /* Option 4 */
+  background-color: #69747C;
+  /* Option 5 */
+  /* background-color: A8BA9A; */
+}
+
+
+.mainDiv{
+  /* margin: 100px; */
+  padding: 10px 10px 10px 10px;
+  /* background-color: rgb(156, 156, 248); */
+  /* background-color: #6B6570; */
+  /* add transparency here */
+  
+}
+
+body{
+  background-color: lightblue;
+  background-image: url("./assets/backgroundImage.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: aqua;
+  /* padding: 100px; */
+  /* font-family:'Courier New', Courier, monospace */
+}
+
+h3{
+  text-align: center;
+}
+
+.upperDiv{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  
+}
+
+.monsterDescription{
+  width: 1100px;
+  height: 250px;
+  border: 5px solid black;
+  margin: 100px 100px 25px 50px;
+  /* B8D8D9 - option 4*/
+  /* background-color: #B8D8D9; */
+  background-color: slategray;
+
+  /* ACE894 option 5 */
+  /* background-color: #ACE894; */
+
+}
+
+.monsterImage{
+  width: 500px;
+  height: auto;
+  border: 5px solid black;
+  margin: 100px 50px 25px 100px;
+  background-color: whitesmoke;
+}
+
+.info{
+  margin: 25px 100px 100px 100px;
+  display:flex;
+  align-items: stretch;
+  border: 5px solid black;
+  /* B8D8D9 Option 4 */
+  /* background-color: #B8D8D9; */
+  background-color: slategray;
+  /* ACE894 Option 5 */
+  /* background-color: #ACE894; */
+  
+}
+
+ul{
+  list-style-type: none;
+  text-align: left;
+}
+
+.monsterInfo{
+  /* display: flex;
+  justify-content: space-around;
+  justify-content: flex-end;
+  align-items: stretch; */
+  width: 500px;
+  height: 250px;
+  text-align: left;
+}
+
+.footer{
+  border: 5px solid black;
+  height: 100px;
+  /* Option 4 */
+  background-color: #69747C;
+  /* Option 5 */
+  /* background-color: A8BA9A; */
+
+}
+.slideDiv{
+  padding: 10px 10px 10px 10px;
+  /* background-color: #DBB957; */
+background-color: darkgray;
+}
+.slideDiv:hover{
+  opacity: .1;
 }
