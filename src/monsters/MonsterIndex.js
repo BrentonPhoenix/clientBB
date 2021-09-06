@@ -2,9 +2,6 @@ import React, {useState, useEffect} from "react";
 import MonsterCreate from "./MonsterCreate";
 import MonsterTable2 from "./MonsterCarousel";
 import MonsterEdit from "./MonsterEdit";
-
-
-
 import MonsterTable from "./MonsterTable"
 
 
@@ -68,5 +65,8 @@ export default MonsterIndex;
 
 
 
+
             {/* <MonsterCaro monsters={monsters} editUpdateMonster={editUpdateMonster} updateOn={updateOn} fetchMonsters={fetchMonsters} token={props.token}/> */}
+
+            // {/* <MonsterCaro monsters={monsters} editUpdateMonster={editUpdateMonster} updateOn={updateOn} fetchMonsters={fetchMonsters} token={props.token}/> */}
             // <MonsterTable monsters={monsters} editUpdateMonster={editUpdateMonster} updateOn={updateOn} fetchMonsters={fetchMonsters} token={props.token}/>
