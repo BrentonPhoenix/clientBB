@@ -66,6 +66,7 @@ body{
   /* background-color: ; */
   /* background-color: #6B6570; */
   /* add transparency here */
+  
 }
 
 body{
@@ -91,6 +92,7 @@ h3{
   display: flex;
   align-items: flex-start;
   justify-content: space-around;
+  
 }
 
 .monsterDescription{
@@ -100,7 +102,9 @@ h3{
   margin: 100px 100px 25px 50px;
   padding: 20px 20px 20px 20px;
   /* B8D8D9 - option 4*/
-  background-color: #B8D8D9;
+  /* background-color: #B8D8D9; */
+  background-color: slategray;
+
   /* ACE894 option 5 */
   /* background-color: #ACE894; */
 
@@ -121,7 +125,8 @@ h3{
   border: 5px solid black;
   padding: 20px 20px 20px 20px;
   /* B8D8D9 Option 4 */
-  background-color: #B8D8D9;
+  /* background-color: #B8D8D9; */
+  background-color: slategray;
   /* ACE894 Option 5 */
   /* background-color: #ACE894; */
   
@@ -174,12 +179,14 @@ border: 2px solid black;
 .slideDiv:hover{
   opacity:.3;
 } 
+
 .slideDiv{
    border: 5px solid black;
   padding: 10px 10px 10px 10px;
   background-color: rgb(219, 185, 87, .5);
   margin: 2px;
 }
+
 
 
 
