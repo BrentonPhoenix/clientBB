@@ -180,13 +180,14 @@ border: 2px solid black;
   opacity:.5;
 } */
 
-  opacity: 60%;
-  padding: 10px 10px 10px 10px;
-  background-color: #1b4332;
-}
+
+
 
 .sideDiv:hover{
   opacity: .5;
+  opacity: 60%;
+  padding: 10px 10px 10px 10px;
+  background-color: #1b4332;
 }
 
 .monster {

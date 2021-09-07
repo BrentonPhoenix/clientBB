@@ -14,9 +14,9 @@ const Footer = () => {
             </Col>
             <Col md="4" id="colOne">
                 <p>&copy; Team 2, 2021</p>
-<<<<<<< HEAD
+
                
-=======
+
                 <p>Pheonix</p>
                 <p>Christian</p>
                 <p>Richard</p>
@@ -26,7 +26,7 @@ const Footer = () => {
 
                
 
->>>>>>> dc7c7688dd26473c53ac58aabc347f3272832663
+
             </Row>
         </footer>
     );
