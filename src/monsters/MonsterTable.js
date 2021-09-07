@@ -54,7 +54,7 @@ const monsterMapper = () =>{
                             <ul>
                             <li>{monster.description}</li>
                             </ul>
-                        <li className="url">Monster Image URL:  </li>
+                        {/* <li className="url">Monster Image URL:  </li> */}
                             <ul>
                             <li>{monster.image}</li>
                             </ul>

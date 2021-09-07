@@ -36,10 +36,10 @@ const Footer = () => {
 
                
 
-                <p>Pheonix</p>
-                <p>Christian</p>
+                <p>Pheonix-Christian-Richard-Rhianna</p>
+                {/* <p>Christian</p>
                 <p>Richard</p>
-                <p>Rhianna</p>
+                <p>Rhianna</p> */}
 
             </Col>
 

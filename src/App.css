@@ -15,7 +15,7 @@ header {
 }
 
  
-}
+
 body{
   font-family: 'MedievalSharp', cursive;
   font-size: 16pt;
@@ -190,10 +190,7 @@ border: 2px solid black;
   padding: 10px 10px 10px 10px;
   background-color: #1b4332;
 }
-*/
 
-  opacity:.3;
-} 
 
 .slideDiv{
    border: 5px solid black;
