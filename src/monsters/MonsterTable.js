@@ -9,7 +9,7 @@ const deleteMonster = (monster) => {
 
 
     const deleteMonsterUrl = `http://localhost:4000/my-monsters/delete/${monster.id}`;
-    // const accessToken = localStorage.getItem('sessionToken')
+
 
     fetch(deleteMonsterUrl, {
         method: 'DELETE',
@@ -27,15 +27,11 @@ const deleteMonster = (monster) => {
 }
 
 const monsterMapper = () =>{
-    return props.monsters.map((monster, index)=>{
+    return props.monsters.map((monster)=>{
         return(
             <List type="unstyled">
                 <br />
-                {/* Do we need this key? */}
-                {/* key={index} */}
                 <ul>
-                    {/* <li>{monster.id}</li> */}
-                    {/* <Text style={{fontWeight: "bold"}}></Text> */}
                     <li className="monster">Monster Name:  {monster.creature}</li> &nbsp; 
                     <ul>
                         <li className="hp">HP: </li>

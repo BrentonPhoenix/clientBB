@@ -3,6 +3,7 @@
   text-align: center;
 }
 
+
 /* 
 .header {
   width: 100%;
@@ -17,9 +18,12 @@
   padding: '00px'
 } */
 
-/* body{
-  background-image: ;
-} */
+body{
+  font-family: 'MedievalSharp';
+  /* font-family: 'DotGothic16'; */
+  /* font-family: 'Open Sans'; */
+  font-size: 16pt;
+}
 
 
 
@@ -114,12 +118,12 @@ ul{
 .slideDiv{
   opacity: 60%;
   padding: 10px 10px 10px 10px;
-  background-color: #DBB957;
+  background-color: #1b4332;
 }
 
-/* .sideDiv:hover{
+.sideDiv:hover{
   opacity: .5;
-} */
+}
 
 .monster {
   font-weight: bold;
