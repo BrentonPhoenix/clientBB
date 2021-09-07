@@ -27,8 +27,7 @@ const OurMenu = (props) => {
                 <DropdownItem href="../monsters/MonsterEdit">View/Edit Your Monsters</DropdownItem>
                 <DropdownItem divider />
                 <DropdownItem header>User</DropdownItem>
-                <DropdownItem href="../auth/Login">Login</DropdownItem>
-                <DropdownItem href="../auth/Register">Register</DropdownItem>
+
                 <DropdownItem onClick={props.clickLogout}>Logout</DropdownItem>
             </DropdownMenu>
             </Dropdown>

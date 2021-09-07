@@ -2,8 +2,14 @@
 
 .App {
   text-align: center;
-
+ 
 }
+body{
+  font-family: 'MedievalSharp', cursive;
+  font-size: 16pt;
+}
+
+
 
 /* 
 .header {
@@ -146,13 +152,7 @@ ul{
   /* background-color: A8BA9A; */
 
 }
-/* .slideDiv{ */
 
-/*   border: 5px solid black;
-  padding: 10px 10px 10px 10px;
-  background-color: rgb(219, 185, 87, .5);
-  margin: 2px;
-}
 
 
 .carousel-control-next-icon{
@@ -171,19 +171,24 @@ border: 2px solid black;
 }
 
 
-
 .slideDiv:hover{
-  opacity:.5;
-} */
-
-  opacity: 60%;
+  opacity:.3;
+} 
+.slideDiv{
+   border: 5px solid black;
   padding: 10px 10px 10px 10px;
-  background-color: #DBB957;
+  background-color: rgb(219, 185, 87, .5);
+  margin: 2px;
 }
 
-/* .sideDiv:hover{
-  opacity: .5;
-} */
+
+
+
+.loginDiv{
+  opacity: .9;
+  padding: 10px 10px 10px 10px;
+  background-color: #DBB957;
+} 
 
 .monster {
   font-weight: bold;
