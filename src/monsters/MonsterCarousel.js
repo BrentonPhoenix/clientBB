@@ -134,15 +134,8 @@ const slides = props.monsters.map((monster)=>{
 
 
 return(
-    
-<>
-    <h2>My Monsters</h2>
-    <hr/>
-    {/* <h3>Monster Name</h3> */}
-    {/* <h4>img link</h4> */}
-    {/* {monsterMapper()} */}
-    
-
+<div id="font-test">
+   
 
 <Carousel className="mainDiv"
 activeIndex={activeIndex}
@@ -154,7 +147,8 @@ activeIndex={activeIndex}
 <CarouselControl direction="prev" onClickHandler={previous} />
 <CarouselControl direction="next" onClickHandler={next} />
 </Carousel>
-  </>
+</div>
+
 )
 }
 export default MonsterTable2;
