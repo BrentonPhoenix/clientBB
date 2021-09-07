@@ -1,6 +1,5 @@
 .App {
   text-align: center;
-
 }
 
 header {
@@ -10,20 +9,8 @@ header {
   padding-right: 10px;
 }
 
-.footerDiv {
-  position: relative;
-}
-
-footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  margin-top: 20px;
-  border-top: 3px solid gray;
-  background-color: rgba(100, 100, 100, 0.7);
-  padding: 5px;
-  text-align: center;
-  
+.navButton {
+  margin: 5px;
 }
 
 .router{
@@ -56,8 +43,9 @@ footer {
 
 
 .mainDiv{
+  position: relative;
+  padding: 10px;
   /* margin: 100px; */
-  padding: 10px 10px 10px 10px;
   /* background-color: ; */
   /* background-color: #6B6570; */
   /* add transparency here */
@@ -136,7 +124,9 @@ ul{
   
 }
 
-/* .slideDiv{ */
+.slideDiv {
+  position: static;
+}
 
 /*   border: 5px solid black;
   padding: 10px 10px 10px 10px;
@@ -210,3 +200,19 @@ border: 2px solid black;
   
 }
 
+.footerDiv {
+  position: relative;
+  bottom: 0;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin-top: 20px;
+  border-top: 3px solid gray;
+  background-color: rgba(100, 100, 100, 0.7);
+  padding: 5px;
+  text-align: center;
+  
+}
