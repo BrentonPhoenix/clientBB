@@ -1,38 +1,215 @@
+
+
+
+
 .App {
+  text-align: center;
+
+}
+
+header {
+  border-bottom: 3px solid gray;
+  background-color: rgb(105, 116, 124, .7);
+  padding-left: 10px;
+  padding-right: 10px;
+  color:white;
+}
+
+.navButton {
+  margin: 5px;
+}
+
+ 
+
+body{
+  font-family: 'MedievalSharp', cursive;
+  font-size: 16pt;
+  background-image: url('./assets/7-bailey-zindel-NRQV-hBF10M-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed; 
+  width: auto;
+  height: auto;
+}
+
+.router{
+  border: 5px solid black;
+  height: 100px;
+
+  background-color: #69747C;
+}
+
+
+.divCreate{
+  border: 1px solid black;
+  height: auto;
+  width: auto;
+  margin: 2px 2px 4px 0px;
+   padding: 0px 0px 0px 1px; 
+  background-color: rgb(219, 185, 87, .5);
+  margin: 10px 300px 10px 300px;
+}
+
+
+.mainDiv{
+  position: relative;
+  padding: 10px;
+  
+}
+
+
+h3{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.upperDiv{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: flex-start;
+  justify-content: space-around;
+  
+}
+
+.monsterDescription{
+  width: 1100px;
+  height: auto;
+  border: 5px solid black;
+  margin: 100px 100px 25px 50px;
+  padding: 20px 20px 20px 20px;
+  /* B8D8D9 - option 4*/
+  /* background-color: #B8D8D9; */
+  background-color: slategray;
+
+  /* ACE894 option 5 */
+  /* background-color: #ACE894; */
+
+}
+
+.monsterImage{
+  width: 500px;
+  height: auto;
+  border: 5px solid black;
+  margin: 100px 50px 25px 100px;
+  background-color: whitesmoke;
+}
+
+.info{
+  margin: 25px 100px 100px 100px;
+  display:flex;
+  align-items: stretch;
+  border: 5px solid black;
+  padding: 20px 20px 20px 20px;
+  /* B8D8D9 Option 4 */
+  /* background-color: #B8D8D9; */
+  background-color: slategray;
+  /* ACE894 Option 5 */
+  /* background-color: #ACE894; */
+  
+}
+
+ul{
+  list-style-type: none;
+  text-align: left;
+}
+
+.monsterInfo{
+  /* display: flex;
+  justify-content: space-around;
+  justify-content: flex-end;
+  align-items: stretch; */
+  width: 500px;
+  height: 250px;
+  text-align: left;
+  
+}
+
+
+
+
+.carousel-control-next-icon{
+  background-image : url(./assets/arrow-right.svg);
+  border-radius: 100%;
+  border: 2px solid black;
+}
+.carousel-control-prev-icon{
+background-image : url(./assets/arrow-left.svg);
+border-radius: 100%;
+border: 2px solid black;
+}
+
+
+
+.slideDiv:hover{
+  opacity: .3;
+  
+  padding: 10px 10px 10px 10px;
+  background-color: #1b4332;
+}
+
+
+
+.slideDiv{
+   border: 5px solid black;
+  padding: 10px 10px 10px 10px;
+  background-color: rgb(219, 185, 87, .5);
+  margin: 2px;
+}
+
+
+
+
+
+.loginDiv{
+  opacity: .9;
+  padding: 10px 10px 10px 10px;
+  background-color: #DBB957;
+} 
+
+
+.monster {
+  font-weight: bold;
+}
+
+.hp {
+  font-weight: bold;
+}
+.ac {
+  font-weight: bold;
+}
+.speed {
+  font-weight: bold;
+}
+.rating {
+  font-weight: bold;
+}
+.description {
+  font-weight: bold;
+}
+.url {
+  font-weight: bold;
+}
+
+.buttons{
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.close-button{
+  border-radius: 5px;
+  background-color: red;
+  
+}
+
+
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin-top: 20px;
+  border-top: 3px solid gray;
+  background-color: rgb(105, 116, 124, .7);
+  padding: 5px;
+  text-align: center;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  
 }
