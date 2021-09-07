@@ -15,7 +15,7 @@ header {
 }
 
  
-}
+
 body{
   font-family: 'MedievalSharp', cursive;
   font-size: 16pt;
@@ -90,6 +90,8 @@ body{
 
 /* image 4 for carousel */
 background-image: url('./assets/4-luca-bravo-O453M2Liufs-unsplash.jpg');
+/* background-repeat: no-repeat;
+background-size: auto; */
 /* image 2 for login */
 /* background-image: url('./assets/2-mark-harpur-K2s_YE031CA-unsplash.jpg'); */
 /* background-image: url('./assets/1-pine-watt-2Hzmz15wGik-unsplash.jpg'); */
@@ -184,24 +186,22 @@ border: 2px solid black;
 
 
 
-.sideDiv:hover{
-  opacity: .5;
-  opacity: 60%;
-  padding: 10px 10px 10px 10px;
-  background-color: #1b4332;
-}
-*/
 
-  opacity:.3;
-} 
+
 
 .slideDiv{
-   border: 5px solid black;
+  border: 5px solid black;
   padding: 10px 10px 10px 10px;
-  background-color: rgb(219, 185, 87, .5);
+  background-color: rgb(219, 186, 87);
   margin: 2px;
 }
 
+.slideDiv:hover{
+  opacity: .5;
+  /* opacity: 60%;
+  padding: 10px 10px 10px 10px;
+  background-color: #1b4332; */
+}
 
 
 
