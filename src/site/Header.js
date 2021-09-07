@@ -42,7 +42,9 @@ const OurMenu = (props) => {
                 <DropdownItem onClick={pushToRoute("/edit")}>View/Edit Your Monsters</DropdownItem>
                 <DropdownItem divider />
                 <DropdownItem header>User</DropdownItem>
+
                 <DropdownItem onClick={pushToRoute("/login")}>Login/Register</DropdownItem>
+
                 <DropdownItem onClick={props.clickLogout}>Logout</DropdownItem>
             </DropdownMenu>
             </Dropdown> */}

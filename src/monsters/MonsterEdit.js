@@ -66,7 +66,7 @@ const MonsterEdit = (props) => {
                         </FormGroup>
                         <FormGroup>
                             <Label htmlFor="description">Edit Description:</Label>
-                            <Input name="description" value={editdescription} onChange={(e) => setEditDesc(e.target.value)}/>
+                            <Input type="textarea" maxLength="300" value={editdescription} onChange={(e) => setEditDesc(e.target.value)}/>
                             &nbsp;
                         </FormGroup>
                         <div className="buttons">

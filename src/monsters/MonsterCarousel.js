@@ -134,20 +134,21 @@ const slides = props.monsters.map((monster)=>{
 
 
 return(
-    <>
+<div id="font-test">
    
 
 <Carousel className="mainDiv"
 activeIndex={activeIndex}
-next={next}
-previous={previous}
+// next={next}
+// previous={previous}
 >
 <CarouselIndicators items={props.monsters} activeIndex={activeIndex} onClickHandler={goToIndex} />
 {slides}
 <CarouselControl direction="prev" onClickHandler={previous} />
 <CarouselControl direction="next" onClickHandler={next} />
 </Carousel>
-    </>
+</div>
+
 )
 }
 export default MonsterTable2;

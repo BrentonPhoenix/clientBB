@@ -38,12 +38,8 @@ function App () {
 
     <div className="App">
       <Header clickLogout={clearToken} />
-          {/* <OurMenu/> */}
-          {/* <Switch>
-            <Route exact path="/create" component="./monsters/MonsterCreate" />
-            <Route exact path="/edit" component="./monsters/MonsterEdit" />
-            <Route exact path="/login" component="./auth/Login" />
-          </Switch> */}
+
+      {/* <MonsterTable/> */}
       {protectedViews()}
       <Footer/>
     </div>

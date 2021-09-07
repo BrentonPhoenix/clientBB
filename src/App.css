@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+
 }
 
 header {
@@ -12,6 +13,37 @@ header {
 .navButton {
   margin: 5px;
 }
+
+ 
+}
+body{
+  font-family: 'MedievalSharp', cursive;
+  font-size: 16pt;
+}
+
+
+/* 
+.header {
+  width: 100%;
+  height: 50px;
+  background-color: aquamarine;
+  color: blueviolet;
+
+}
+
+.header-route{
+  flex: 1;
+  padding: '00px'
+} */
+
+body{
+  font-family: 'MedievalSharp';
+  /* font-family: 'DotGothic16'; */
+  /* font-family: 'Open Sans'; */
+  font-size: 16pt;
+}
+
+
 
 .router{
   border: 5px solid black;
@@ -49,6 +81,7 @@ header {
   /* background-color: ; */
   /* background-color: #6B6570; */
   /* add transparency here */
+  
 }
 
 body{
@@ -72,6 +105,7 @@ h3{
   display: flex;
   align-items: flex-start;
   justify-content: space-around;
+  
 }
 
 .monsterDescription{
@@ -81,7 +115,9 @@ h3{
   margin: 100px 100px 25px 50px;
   padding: 20px 20px 20px 20px;
   /* B8D8D9 - option 4*/
-  background-color: #B8D8D9;
+  /* background-color: #B8D8D9; */
+  background-color: slategray;
+
   /* ACE894 option 5 */
   /* background-color: #ACE894; */
 
@@ -102,7 +138,8 @@ h3{
   border: 5px solid black;
   padding: 20px 20px 20px 20px;
   /* B8D8D9 Option 4 */
-  background-color: #B8D8D9;
+  /* background-color: #B8D8D9; */
+  background-color: slategray;
   /* ACE894 Option 5 */
   /* background-color: #ACE894; */
   
@@ -128,11 +165,6 @@ ul{
   position: static;
 }
 
-/*   border: 5px solid black;
-  padding: 10px 10px 10px 10px;
-  background-color: rgb(219, 185, 87, .5);
-  margin: 2px;
-}
 
 
 .carousel-control-next-icon{
@@ -152,18 +184,34 @@ border: 2px solid black;
 
 
 
-.slideDiv:hover{
-  opacity:.5;
-}
-
+.sideDiv:hover{
+  opacity: .5;
   opacity: 60%;
   padding: 10px 10px 10px 10px;
-  background-color: #DBB957;
+  background-color: #1b4332;
+}
+*/
+
+  opacity:.3;
+} 
+
+.slideDiv{
+   border: 5px solid black;
+  padding: 10px 10px 10px 10px;
+  background-color: rgb(219, 185, 87, .5);
+  margin: 2px;
 }
 
-/* .sideDiv:hover{
-  opacity: .5;
-} */
+
+
+
+
+.loginDiv{
+  opacity: .9;
+  padding: 10px 10px 10px 10px;
+  background-color: #DBB957;
+} 
+
 
 .monster {
   font-weight: bold;
