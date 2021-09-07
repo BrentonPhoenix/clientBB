@@ -1,7 +1,7 @@
-
+import MonsterCreate from "./MonsterCreate";
 import React from "react";
 import {Button, List, } from "reactstrap"
-
+import MonsterEdit from "./MonsterEdit";
 
 const MonsterTable = (props) =>{
 const deleteMonster = (monster) => {
@@ -78,6 +78,8 @@ const monsterMapper = () =>{
 
 return(
     <div>
+        <MonsterCreate/>
+
         &nbsp; &nbsp;
     <h2>My Monsters</h2>
     <hr/>

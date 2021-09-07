@@ -134,7 +134,7 @@ const slides = props.monsters.map((monster)=>{
 
 
 return(
-    <>
+    <span id="font-test">
    
 
 <Carousel className="mainDiv"
@@ -147,7 +147,7 @@ previous={previous}
 <CarouselControl direction="prev" onClickHandler={previous} />
 <CarouselControl direction="next" onClickHandler={next} />
 </Carousel>
-    </>
+    </span>
 )
 }
 export default MonsterTable2;

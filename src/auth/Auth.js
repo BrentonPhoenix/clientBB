@@ -13,7 +13,7 @@ const Auth = (props) => {
    
    return(
         <Container className="auth-container">
-         <div className="slideDiv">
+         <div className="loginDiv">
            {login ? <Login updateToken={props.updateToken}/>  :  <Register updateToken={props.updateToken}/>}
            <Button onClick={flipLogin}>Need to {login ? <>Register</> : <>Login</>}</Button>
            </div>
