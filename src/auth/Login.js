@@ -26,7 +26,7 @@ const Login = (props) => {
 
 
     return(
-        <div>
+        <div className="mainDiv">
             <h1>
                 Login
             </h1>
@@ -34,14 +34,15 @@ const Login = (props) => {
                 <FormGroup>
                     <Label htmlFor="email">Email</Label>
                     
-                    <Input placeholder="email" type="text" value={email} onChange={(e) => setEmail(e.target.value)}/>
+                    <Input placeholder="example@email.com" type="text" value={email} onChange={(e) => setEmail(e.target.value)}/>
                 </FormGroup>
                 <br/>
                 <FormGroup>
                 <Label htmlFor="password">Password</Label>
                 
-                    <Input type="password" value={password} onChange={(e)=> setPassword(e.target.value)}/>
+                    <Input placeholder="Enter password" type="password" value={password} onChange={(e)=> setPassword(e.target.value)}/>
                 </FormGroup>
+                <br/>
                 <Button type='submit'>Login</Button>
             </Form>
         </div>

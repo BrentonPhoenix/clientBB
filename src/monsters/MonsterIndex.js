@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React, {useState, useEffect, ImageBackground} from "react";
 import MonsterCreate from "./MonsterCreate";
 import MonsterTable2 from "./MonsterCarousel";
 import MonsterEdit from "./MonsterEdit";
@@ -10,7 +10,7 @@ const MonsterIndex = (props) => {
     const [updateActive, setUpdateActive] = useState(false);
     const [monsterToUpdate, setMonsterToUpdate] = useState({});
     const fetchMonstersUrl = "http://localhost:4000/my-monsters/"
-// is this the correct endpoint? is there an underscore, or just a space in owner_id?
+
 
 
     const fetchMonsters = () => {
@@ -45,8 +45,10 @@ const MonsterIndex = (props) => {
     }
 
     return(
-        <div className="mainDiv">
-
+        <div className="mainDiv" >
+            {/* <div className="overlay" style={{background: `url(${BackgroundImage})`, backgroundRepeat: 'no-repeat', width: '250px' }}> */}
+                
+            {/* </div> */}
             
 
             <MonsterTable2 monsters={monsters} editUpdateMonster={editUpdateMonster} updateOn={updateOn} fetchMonsters={fetchMonsters} token={props.token}/>
@@ -63,9 +65,17 @@ const MonsterIndex = (props) => {
 
 export default MonsterIndex;
 
+            {/* <MonsterCaro monsters={monsters} editUpdateMonster={editUpdateMonster} updateOn={updateOn} fetchMonsters={fetchMonsters} token={props.token}/> */}
+            // <MonsterTable monsters={monsters} editUpdateMonster={editUpdateMonster} updateOn={updateOn} fetchMonsters={fetchMonsters} token={props.token}/>
+
+
+            // {/* <MonsterCaro monsters={monsters} editUpdateMonster={editUpdateMonster} updateOn={updateOn} fetchMonsters={fetchMonsters} token={props.token}/> */}
+            // <MonsterTable monsters={monsters} editUpdateMonster={editUpdateMonster} updateOn={updateOn} fetchMonsters={fetchMonsters} token={props.token}/>
+
 
 
 
 
             // {/* <MonsterCaro monsters={monsters} editUpdateMonster={editUpdateMonster} updateOn={updateOn} fetchMonsters={fetchMonsters} token={props.token}/> */}
             // <MonsterTable monsters={monsters} editUpdateMonster={editUpdateMonster} updateOn={updateOn} fetchMonsters={fetchMonsters} token={props.token}/>
+

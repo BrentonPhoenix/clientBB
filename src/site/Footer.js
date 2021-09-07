@@ -23,14 +23,19 @@ const Footer = () => {
 
 
     return(
+        <div className="footerDiv">
         <footer>
             <Row>
+
             <Col md="8" id="colTwo">
                 {/* {font ? document.getElementsByTagName('body').style.fontFamily = "'Open Sans', sans-serif" : document.getElementsByTagName('body').style.fontFamily = "'MedievalSharp', cursive"} */}
                 <Button onClick={flipFont}>Switch Font!</Button>
             </Col>
             <Col md="4" id="colOne">
                 <p>&copy; Team 2, 2021</p>
+
+               
+
                 <p>Pheonix</p>
                 <p>Christian</p>
                 <p>Richard</p>
@@ -38,10 +43,9 @@ const Footer = () => {
 
             </Col>
 
-               
-
             </Row>
         </footer>
+        </div>
     );
 };
 

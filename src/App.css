@@ -1,14 +1,25 @@
-
-
 .App {
   text-align: center;
+
+}
+
+header {
+  border-bottom: 3px solid gray;
+  background-color: rgba(100, 100, 100, 0.6);
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.navButton {
+  margin: 5px;
+}
+
  
 }
 body{
   font-family: 'MedievalSharp', cursive;
   font-size: 16pt;
 }
-
 
 
 /* 
@@ -25,9 +36,12 @@ body{
   padding: '00px'
 } */
 
-/* body{
-  background-image: ;
-} */
+body{
+  font-family: 'MedievalSharp';
+  /* font-family: 'DotGothic16'; */
+  /* font-family: 'Open Sans'; */
+  font-size: 16pt;
+}
 
 
 
@@ -61,11 +75,13 @@ body{
 
 
 .mainDiv{
+  position: relative;
+  padding: 10px;
   /* margin: 100px; */
-  padding: 10px 10px 10px 10px;
   /* background-color: ; */
   /* background-color: #6B6570; */
   /* add transparency here */
+  
 }
 
 body{
@@ -79,8 +95,6 @@ background-image: url('./assets/4-luca-bravo-O453M2Liufs-unsplash.jpg');
 /* background-image: url('./assets/1-pine-watt-2Hzmz15wGik-unsplash.jpg'); */
 width: auto;
 height: auto;
-padding: 10px;
-
 }
 
 h3{
@@ -91,6 +105,7 @@ h3{
   display: flex;
   align-items: flex-start;
   justify-content: space-around;
+  
 }
 
 .monsterDescription{
@@ -100,7 +115,9 @@ h3{
   margin: 100px 100px 25px 50px;
   padding: 20px 20px 20px 20px;
   /* B8D8D9 - option 4*/
-  background-color: #B8D8D9;
+  /* background-color: #B8D8D9; */
+  background-color: slategray;
+
   /* ACE894 option 5 */
   /* background-color: #ACE894; */
 
@@ -121,7 +138,8 @@ h3{
   border: 5px solid black;
   padding: 20px 20px 20px 20px;
   /* B8D8D9 Option 4 */
-  background-color: #B8D8D9;
+  /* background-color: #B8D8D9; */
+  background-color: slategray;
   /* ACE894 Option 5 */
   /* background-color: #ACE894; */
   
@@ -143,14 +161,8 @@ ul{
   
 }
 
-.footer{
-  border: 5px solid black;
-  height: 100px;
-  /* Option 4 */
-  background-color: #69747C;
-  /* Option 5 */
-  /* background-color: A8BA9A; */
-
+.slideDiv {
+  position: static;
 }
 
 
@@ -171,9 +183,18 @@ border: 2px solid black;
 }
 
 
-.slideDiv:hover{
+
+.sideDiv:hover{
+  opacity: .5;
+  opacity: 60%;
+  padding: 10px 10px 10px 10px;
+  background-color: #1b4332;
+}
+*/
+
   opacity:.3;
 } 
+
 .slideDiv{
    border: 5px solid black;
   padding: 10px 10px 10px 10px;
@@ -184,11 +205,13 @@ border: 2px solid black;
 
 
 
+
 .loginDiv{
   opacity: .9;
   padding: 10px 10px 10px 10px;
   background-color: #DBB957;
 } 
+
 
 .monster {
   font-weight: bold;
@@ -225,3 +248,19 @@ border: 2px solid black;
   
 }
 
+.footerDiv {
+  position: relative;
+  bottom: 0;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin-top: 20px;
+  border-top: 3px solid gray;
+  background-color: rgba(100, 100, 100, 0.7);
+  padding: 5px;
+  text-align: center;
+  
+}
