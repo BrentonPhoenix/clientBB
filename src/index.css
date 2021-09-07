@@ -1,18 +1,7 @@
-@font-face {
-  font-family: 'Swordskull';
-  src: local('Swordskull')
-  url(./fonts/swordskull-font/SwordskullPersonalUse-axqz5.ttf) format('truetype');
-}
 body {
   margin: 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  
+ 
 }
 
 @font-face {
@@ -24,21 +13,17 @@ code {
   unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
-@font-face {
-  font-family: 'DotGothic16';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/dotgothic16/v4/v6-QGYjBJFKgyw5nSoDAGE7Oi25aLSizIM9pT7D_QAno5281PZBz6w.4.woff2) format('woff2');
-  unicode-range: U+f92d-f959, U+f95b-f9f2, U+f9f4-fa0b, U+fa0e-fa0f;
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
 }
 
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/opensans/v23/mem5YaGs126MiZpBA-UN_r8OX-hpOqc.woff2) format('woff2');
-  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  src: url(https://fonts.gstatic.com/s/opensans/v23/mem8YaGs126MiZpBA-UFW50bbck.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
-
