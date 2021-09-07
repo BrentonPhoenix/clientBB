@@ -1,29 +1,30 @@
-
-
 .App {
   text-align: center;
 
 }
 
-/* 
-.header {
-  width: 100%;
-  height: 50px;
-  background-color: aquamarine;
-  color: blueviolet;
-
+header {
+  border-bottom: 3px solid gray;
+  background-color: rgba(100, 100, 100, 0.6);
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
-.header-route{
-  flex: 1;
-  padding: '00px'
-} */
+.footerDiv {
+  position: relative;
+}
 
-/* body{
-  background-image: ;
-} */
-
-
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin-top: 20px;
+  border-top: 3px solid gray;
+  background-color: rgba(100, 100, 100, 0.7);
+  padding: 5px;
+  text-align: center;
+  
+}
 
 .router{
   border: 5px solid black;
@@ -73,8 +74,6 @@ background-image: url('./assets/4-luca-bravo-O453M2Liufs-unsplash.jpg');
 /* background-image: url('./assets/1-pine-watt-2Hzmz15wGik-unsplash.jpg'); */
 width: auto;
 height: auto;
-padding: 10px;
-
 }
 
 h3{
@@ -137,15 +136,6 @@ ul{
   
 }
 
-.footer{
-  border: 5px solid black;
-  height: 100px;
-  /* Option 4 */
-  background-color: #69747C;
-  /* Option 5 */
-  /* background-color: A8BA9A; */
-
-}
 /* .slideDiv{ */
 
 /*   border: 5px solid black;
@@ -174,7 +164,7 @@ border: 2px solid black;
 
 .slideDiv:hover{
   opacity:.5;
-} */
+}
 
   opacity: 60%;
   padding: 10px 10px 10px 10px;

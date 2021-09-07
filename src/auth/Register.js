@@ -26,18 +26,19 @@ const Register = (props)=> {
         .catch(e => console.log(e))
     }
     return(
-        <div>
-        <h1>Register Here</h1>
+        <div className="mainDiv">
+        <h1>Register</h1>
         <Form onSubmit={handleSubmit}>
             <FormGroup>
                 <Label htmlFor="email">Email</Label>
-                <Input type="text" onChange={(e)=>setEmail(e.target.value)} name='email' value={email}></Input>
+                <Input placeholder="example@email.com" type="text" onChange={(e)=>setEmail(e.target.value)} name='email' value={email}></Input>
             </FormGroup>
             <br/>
             <FormGroup>
                 <Label htmlFor="password">Password</Label>
-                <Input type="password" onChange={(e)=> setPassword(e.target.value)} value={password}></Input>
+                <Input placeholder="Enter password" type="password" onChange={(e)=> setPassword(e.target.value)} value={password}></Input>
             </FormGroup>
+            <br/>
             <Button type="submit">Register</Button>
         </Form>
         </div>

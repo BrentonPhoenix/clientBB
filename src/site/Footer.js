@@ -7,24 +7,20 @@ const Footer = () => {
 
 
     return(
+        <div className="footerDiv">
         <footer>
             <Row>
-            <Col md="8" id="colTwo">
+            <Col md="6" id="colTwo">
                 <Button>Switch Font!</Button>
             </Col>
-            <Col md="4" id="colOne">
-                <p>&copy; Team 2, 2021</p>
-                <p>Pheonix</p>
-                <p>Christian</p>
-                <p>Richard</p>
-                <p>Rhianna</p>
+            <Col md="6" id="colOne">
+                <p>&copy; Team 2, 2021<br/>
+                Phoenix - Christian - Richard - Rhianna</p>
 
             </Col>
-
-               
-
             </Row>
         </footer>
+        </div>
     );
 };
 
