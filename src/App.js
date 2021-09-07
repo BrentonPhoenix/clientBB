@@ -1,10 +1,14 @@
 import React, {useState, useEffect} from "react";
 import Header from "./site/Header";
+
 import Auth from "./auth/Auth"
 import MonsterIndex from "./monsters/MonsterIndex";
 import { BrowserRouter as Router } from "react-router-dom";
 // import LoginT from './auth/LoginTest'
 import './App.css'
+
+import Footer from "./site/Footer";
+
 
 function App () {
   const [sessionToken, setSessionToken] = useState("");
@@ -35,13 +39,17 @@ function App () {
 
       <Header clickLogout={clearToken} />
 
+
       {/* <MonsterTable/> */}
 
     
 
+
       {protectedViews()}
+      <Footer/>
 
 
+      {/* <Footer/> */}
     </div>
   );
 };

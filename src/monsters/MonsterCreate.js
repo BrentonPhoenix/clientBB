@@ -39,40 +39,42 @@ const MonsterCreate = (props) => {
         <>
         <h3>Create a Monster!</h3>
         <br />
-        <Form onSubmit={handleSubmit}>
+        <Form className="divCreate" onSubmit={handleSubmit}>
             <FormGroup>
-                <Label htmlFor="creature">Creature:</Label>
+                <Label className="text" htmlFor="creature">Creature:</Label>
                 <Input name="creature" value={creature} onChange={(e) => setCreature(e.target.value)}/>
             </FormGroup>
             <FormGroup>
-                <Label htmlFor="image">Image:</Label>
+                <Label className="text" htmlFor="image">Image:</Label>
                 <Input name="image" value={image} onChange={(e) => setImage(e.target.value)}/>
             </FormGroup>
             <FormGroup>
-                <Label htmlFor="campaign">Campaign:</Label>
+                <Label className="text" className="text" htmlFor="campaign">Campaign:</Label>
                 <Input name="campaign" value={campaign} onChange={(e) => setCampaign(e.target.value)}/>
             </FormGroup>
             <FormGroup>
-                <Label htmlFor="hitpoints">Hitpoints:</Label>
+                <Label className="text" className="text" htmlFor="hitpoints">Hitpoints:</Label>
                 <Input name="hitpoints" value={hitpoints} onChange={(e) => setHitpoints(e.target.value)}/>
             </FormGroup>
             <FormGroup>
-                <Label htmlFor="armorclass">Armor Class:</Label>
+                <Label className="text" className="text" htmlFor="armorclass">Armor Class:</Label>
                 <Input name="armorclass" value={armorclass} onChange={(e) => setArmorclass(e.target.value)}/>
             </FormGroup>
             <FormGroup>
-                <Label htmlFor="speed">Speed:</Label>
+                <Label className="text" className="text" htmlFor="speed">Speed:</Label>
                 <Input name="speed" value={speed} onChange={(e) => setSpeed(e.target.value)}/>
             </FormGroup>
             <FormGroup>
-                <Label htmlFor="rating">Rating:</Label>
+                <Label className="text" htmlFor="rating">Rating:</Label>
                 <Input name="rating" value={rating} onChange={(e) => setRating(e.target.value)}/>
             </FormGroup>
             <FormGroup>
+
                 <Label htmlFor="description">Description:</Label>
-                <Input name="description" value={description} onChange={(e) => setDescription(e.target.value)}/>
+                <Input type="textarea" maxLength="300" value={description} onChange={(e) => setDescription(e.target.value)}/>&nbsp; &nbsp;
+
             </FormGroup>
-            <Button type="submit">Click to Create</Button>
+            <Button color="success" type="submit">Click to Create</Button>
         </Form>
         </>
     )
