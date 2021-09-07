@@ -14,7 +14,6 @@ const Footer = () => {
             document.getElementById('fontFlip').style.fontFamily = 'MedievalSharp';
             setFont(!font)
         }
-        // setFont(!font)
         }
   
     
@@ -27,20 +26,15 @@ const Footer = () => {
         <footer>
             <Row>
 
-            <Col md="8" id="colTwo">
-                {/* {font ? document.getElementsByTagName('body').style.fontFamily = "'Open Sans', sans-serif" : document.getElementsByTagName('body').style.fontFamily = "'MedievalSharp', cursive"} */}
+            <Col md="6" id="colTwo">
                 <Button onClick={flipFont}>Switch Font!</Button>
             </Col>
-            <Col md="4" id="colOne">
+            <Col md="6" id="colOne">
                 <p>&copy; Team 2, 2021</p>
 
                
 
-                <p>Pheonix</p>
-                <p>Christian</p>
-                <p>Richard</p>
-                <p>Rhianna</p>
-
+                <p>Phoenix, Christian, Richard, Rhianna</p>
             </Col>
 
             </Row>

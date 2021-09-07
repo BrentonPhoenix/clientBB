@@ -1,3 +1,7 @@
+
+
+
+
 .App {
   text-align: center;
 
@@ -5,9 +9,10 @@
 
 header {
   border-bottom: 3px solid gray;
-  background-color: rgba(100, 100, 100, 0.6);
+  background-color: rgb(105, 116, 124, .7);
   padding-left: 10px;
   padding-right: 10px;
+  color:white;
 }
 
 .navButton {
@@ -15,53 +20,25 @@ header {
 }
 
  
-}
+
 body{
   font-family: 'MedievalSharp', cursive;
   font-size: 16pt;
+  background-image: url('./assets/7-bailey-zindel-NRQV-hBF10M-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed; 
+  width: auto;
+  height: auto;
 }
-
-
-/* 
-.header {
-  width: 100%;
-  height: 50px;
-  background-color: aquamarine;
-  color: blueviolet;
-
-}
-
-.header-route{
-  flex: 1;
-  padding: '00px'
-} */
-
-body{
-  font-family: 'MedievalSharp';
-  /* font-family: 'DotGothic16'; */
-  /* font-family: 'Open Sans'; */
-  font-size: 16pt;
-}
-
-
 
 .router{
   border: 5px solid black;
   height: 100px;
-  /* Option 4 */
+
   background-color: #69747C;
-  /* Option 5 */
-  /* background-color: A8BA9A; */
 }
 
-/* .text{
-  border: 1px solid black;
-  height: auto;
-  width: auto;
-  margin: 2px 2px 4px 0px;
-   padding: 0px 0px 0px 1px; 
-  background-color: #B8D8D9;
-} */
 
 .divCreate{
   border: 1px solid black;
@@ -77,25 +54,9 @@ body{
 .mainDiv{
   position: relative;
   padding: 10px;
-  /* margin: 100px; */
-  /* background-color: ; */
-  /* background-color: #6B6570; */
-  /* add transparency here */
   
 }
 
-body{
-/* image 7 for create monster*/
-/* background-image: url('./assets/7-bailey-zindel-NRQV-hBF10M-unsplash.jpg'); */
-
-/* image 4 for carousel */
-background-image: url('./assets/4-luca-bravo-O453M2Liufs-unsplash.jpg');
-/* image 2 for login */
-/* background-image: url('./assets/2-mark-harpur-K2s_YE031CA-unsplash.jpg'); */
-/* background-image: url('./assets/1-pine-watt-2Hzmz15wGik-unsplash.jpg'); */
-width: auto;
-height: auto;
-}
 
 h3{
   text-align: center;
@@ -110,7 +71,7 @@ h3{
 
 .monsterDescription{
   width: 1100px;
-  height: 250px;
+  height: auto;
   border: 5px solid black;
   margin: 100px 100px 25px 50px;
   padding: 20px 20px 20px 20px;
@@ -161,9 +122,6 @@ ul{
   
 }
 
-.slideDiv {
-  position: static;
-}
 
 
 
@@ -171,10 +129,6 @@ ul{
   background-image : url(./assets/arrow-right.svg);
   border-radius: 100%;
   border: 2px solid black;
-  
-  
-  
-  
 }
 .carousel-control-prev-icon{
 background-image : url(./assets/arrow-left.svg);
@@ -184,16 +138,14 @@ border: 2px solid black;
 
 
 
-.sideDiv:hover{
-  opacity: .5;
-  opacity: 60%;
+.slideDiv:hover{
+  opacity: .3;
+  
   padding: 10px 10px 10px 10px;
   background-color: #1b4332;
 }
-*/
 
-  opacity:.3;
-} 
+
 
 .slideDiv{
    border: 5px solid black;
@@ -248,10 +200,6 @@ border: 2px solid black;
   
 }
 
-.footerDiv {
-  position: relative;
-  bottom: 0;
-}
 
 footer {
   position: relative;
@@ -259,8 +207,9 @@ footer {
   width: 100%;
   margin-top: 20px;
   border-top: 3px solid gray;
-  background-color: rgba(100, 100, 100, 0.7);
+  background-color: rgb(105, 116, 124, .7);
   padding: 5px;
   text-align: center;
+  color: white;
   
 }
