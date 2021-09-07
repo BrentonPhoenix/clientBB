@@ -1,13 +1,13 @@
 import React, {useState, useEffect} from "react";
-import Header from "./site/Header";
+import { Router, Route, Switch } from "react-router-dom";
 
+import Header from "./site/Header";
 import Auth from "./auth/Auth"
 import MonsterIndex from "./monsters/MonsterIndex";
-import { BrowserRouter as Router } from "react-router-dom";
-// import LoginT from './auth/LoginTest'
+//import OurMenu from "./site/Header"
+import Footer from "./site/Footer";
 import './App.css'
 
-import Footer from "./site/Footer";
 
 
 function App () {
@@ -35,54 +35,16 @@ function App () {
   }
 {/* <MonsterIndex token = {sessionToken}/>  return to line 28* when monsterindex is functional*/}
   return (
-    <div>
 
+    <div className="App">
       <Header clickLogout={clearToken} />
 
-
       {/* <MonsterTable/> */}
-
-    
-
-
       {protectedViews()}
       <Footer/>
-
-
-      {/* <Footer/> */}
     </div>
+
   );
 };
 
 export default App;
-
-
-// import logo from './logo.svg';
-// import './App.css';
-// import Login from './auth/Login'
-// function App() {
-//   return (
-//     <div className="App">
-//    <Login/>
-
-
-
-//Richard
-// import React from 'react';
-// import 'bootstrap/dist/css/bootstrap.css'
-// import './App.css';
-
-// import Footer from './site/Footer';
-// import Header from './site/Header';
-// import {
-//   BrowserRouter as Router
-// } from 'react-router-dom';
-
-
-// function App() {
-//   return (
-//     <div className="App">
-//       <Router>
-//       <Header />
-//       </Router>
-//       <Footer />
