@@ -31,6 +31,9 @@ const Footer = () => {
             </Col>
             <Col md="4" id="colOne">
                 <p>&copy; Team 2, 2021</p>
+
+               
+
                 <p>Pheonix</p>
                 <p>Christian</p>
                 <p>Richard</p>
@@ -39,6 +42,7 @@ const Footer = () => {
             </Col>
 
                
+
 
             </Row>
         </footer>

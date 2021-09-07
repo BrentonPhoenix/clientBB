@@ -10,7 +10,6 @@ body{
 }
 
 
-
 /* 
 .header {
   width: 100%;
@@ -25,9 +24,12 @@ body{
   padding: '00px'
 } */
 
-/* body{
-  background-image: ;
-} */
+body{
+  font-family: 'MedievalSharp';
+  /* font-family: 'DotGothic16'; */
+  /* font-family: 'Open Sans'; */
+  font-size: 16pt;
+}
 
 
 
@@ -176,7 +178,22 @@ border: 2px solid black;
 }
 
 
-.slideDiv:hover{
+/* .slideDiv:hover{
+ */
+/*   opacity:.5;
+} */
+
+
+
+
+.sideDiv:hover{
+  opacity: .5;
+  opacity: 60%;
+  padding: 10px 10px 10px 10px;
+  background-color: #1b4332;
+}
+*/
+
   opacity:.3;
 } 
 
@@ -196,6 +213,7 @@ border: 2px solid black;
   padding: 10px 10px 10px 10px;
   background-color: #DBB957;
 } 
+
 
 .monster {
   font-weight: bold;

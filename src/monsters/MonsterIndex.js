@@ -10,7 +10,7 @@ const MonsterIndex = (props) => {
     const [updateActive, setUpdateActive] = useState(false);
     const [monsterToUpdate, setMonsterToUpdate] = useState({});
     const fetchMonstersUrl = "http://localhost:4000/my-monsters/"
-// is this the correct endpoint? is there an underscore, or just a space in owner_id?
+
 
 
     const fetchMonsters = () => {
