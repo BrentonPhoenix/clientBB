@@ -23,8 +23,10 @@ const Footer = () => {
 
 
     return(
+        <div className="footerDiv">
         <footer>
             <Row>
+
             <Col md="8" id="colTwo">
                 {/* {font ? document.getElementsByTagName('body').style.fontFamily = "'Open Sans', sans-serif" : document.getElementsByTagName('body').style.fontFamily = "'MedievalSharp', cursive"} */}
                 <Button onClick={flipFont}>Switch Font!</Button>
@@ -41,11 +43,9 @@ const Footer = () => {
 
             </Col>
 
-               
-
-
             </Row>
         </footer>
+        </div>
     );
 };
 
