@@ -19,8 +19,7 @@ header {
   margin: 5px;
 }
 
- 
-<<<<<<< HEAD
+
 
 body{
   font-family: 'MedievalSharp', cursive;
@@ -41,8 +40,7 @@ body{
   flex: 1;
   padding: '00px'
 } */
-=======
->>>>>>> c18dd93540a7703f1f46ffec9e1a0bf7c52addbb
+
 
 body{
   font-family: 'MedievalSharp', cursive;
@@ -80,23 +78,7 @@ body{
   
 }
 
-<<<<<<< HEAD
-body{
-/* image 7 for create monster*/
-/* background-image: url('./assets/7-bailey-zindel-NRQV-hBF10M-unsplash.jpg'); */
 
-/* image 4 for carousel */
-background-image: url('./assets/4-luca-bravo-O453M2Liufs-unsplash.jpg');
-/* background-repeat: no-repeat;
-background-size: auto; */
-/* image 2 for login */
-/* background-image: url('./assets/2-mark-harpur-K2s_YE031CA-unsplash.jpg'); */
-/* background-image: url('./assets/1-pine-watt-2Hzmz15wGik-unsplash.jpg'); */
-width: auto;
-height: auto;
-}
-=======
->>>>>>> c18dd93540a7703f1f46ffec9e1a0bf7c52addbb
 
 h3{
   text-align: center;
@@ -178,15 +160,6 @@ border: 2px solid black;
 
 
 
-<<<<<<< HEAD
-=======
-.slideDiv:hover{
-  opacity: .3;
-  
-  padding: 10px 10px 10px 10px;
-  background-color: #1b4332;
-}
->>>>>>> c18dd93540a7703f1f46ffec9e1a0bf7c52addbb
 
 
 

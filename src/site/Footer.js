@@ -34,7 +34,9 @@ const Footer = () => {
 
                
 
+
                 <p>Phoenix, Christian, Richard, Rhianna</p>
+
             </Col>
 
             </Row>

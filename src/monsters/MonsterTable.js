@@ -54,6 +54,7 @@ const monsterMapper = () =>{
                             <ul>
                             <li>{monster.description}</li>
                             </ul>
+
                         &nbsp; &nbsp;
                     </ul>    
                     

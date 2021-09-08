@@ -49,6 +49,7 @@ const MonsterIndex = (props) => {
             {props.createEdit ? <MonsterTable monsters={monsters} editUpdateMonster={editUpdateMonster} updateOn={updateOn} fetchMonsters={fetchMonsters} token={props.token} monsterToUpdate={monsterToUpdate} updateOff={updateOff} updateActive={updateActive} /> :<MonsterTable2 monsters={monsters} editUpdateMonster={editUpdateMonster} updateOn={updateOn} fetchMonsters={fetchMonsters} token={props.token}/>}
     
             
+
         </div>
 
     )
