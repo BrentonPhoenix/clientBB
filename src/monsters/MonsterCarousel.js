@@ -1,35 +1,13 @@
-import React, {useState, useEffect} from "react";
-import {Button,Carousel, 
+import React, {useState} from "react";
+import {Carousel, 
     CarouselItem,
     CarouselControl,
-    CarouselIndicators,
-    CarouselCaption} from "reactstrap"
+    CarouselIndicators} from "reactstrap"
     
 
 
 
 const MonsterTable2 = (props) =>{
-const deleteMonster = (monster) => {
-    // console.log(monsterId)
-
-    const deleteMonsterUrl = `http://localhost:4000/my-monsters/delete/${monster.id}`;
-    // const accessToken = localStorage.getItem('sessionToken')
-
-    fetch(deleteMonsterUrl, {
-        method: 'DELETE',
-        headers: new Headers ({
-            "Content-Type": "application/json",
-            "Authorization": `Bearer ${props.token}`
-        })
-    })
-    .then(response => response.json())
-    .then(data => {
-        console.log(data);
-        {props.fetchMonsters()};
-    })
-    .catch(err => console.log(err))
-}
-
     const [activeIndex, setActiveIndex] = useState(0);
     const [animating, setAnimating] = useState(false);
   
@@ -49,60 +27,18 @@ const deleteMonster = (monster) => {
       if (animating) return;
       setActiveIndex(newIndex);
     }
-  
-
-    // return (
-    //   <Carousel
-    //     activeIndex={activeIndex}
-    //     next={next}
-    //     previous={previous}
-    //   >
-    //     <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={goToIndex} />
-    //     {slides}
-    //     <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} />
-    //     <CarouselControl direction="next" directionText="Next" onClickHandler={next} />
-    //   </Carousel>
-    // );
-
-    
-
-
-
-
-
-
-
-
-    // const slides = items.map((item) => {
-    //     return (
-    //       <CarouselItem
-    //         onExiting={() => setAnimating(true)}
-    //         onExited={() => setAnimating(false)}
-    //         key={item.src}
-    //       >
-    //         <img src={item.src} alt={item.altText} />
-    //         <CarouselCaption captionText={item.caption} captionHeader={item.caption} />
-    //       </CarouselItem>
-    //     );
-    //   });
-    
-
 
 
 const slides = props.monsters.map((monster)=>{
         return(
 
-                    <CarouselItem
+            <CarouselItem
             onExiting={() => setAnimating(true)}
             onExited={() => setAnimating(false)}
             key={monster.id}>
 
-            {/* <div><h1>Monster: {monster.creature} 
-            <br/>
-            {monster.image}</h1></div> */}
             <div className="slideDiv">
             <div className="upperDiv">
-              {/* image and description */}
               <div className="monsterImage">
                 <img src={monster.image} className="img-fluid"/>
               </div>
@@ -137,15 +73,11 @@ return(
 <div id="font-test">
    
 
-<Carousel className="mainDiv"
-activeIndex={activeIndex}
-// next={next}
-// previous={previous}
->
-<CarouselIndicators items={props.monsters} activeIndex={activeIndex} onClickHandler={goToIndex} />
-{slides}
-<CarouselControl direction="prev" onClickHandler={previous} />
-<CarouselControl direction="next" onClickHandler={next} />
+<Carousel className="mainDiv"activeIndex={activeIndex}>
+  <CarouselIndicators items={props.monsters} activeIndex={activeIndex} onClickHandler={goToIndex} />
+    {slides}
+  <CarouselControl direction="prev" onClickHandler={previous} />
+  <CarouselControl direction="next" onClickHandler={next} />
 </Carousel>
 </div>
 

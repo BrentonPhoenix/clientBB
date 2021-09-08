@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import {Button, Form, FormGroup, Label, Input} from 'reactstrap';
 
 const MonsterCreate = (props) => {
@@ -24,14 +24,14 @@ const MonsterCreate = (props) => {
         .then((monsterData) => {
             console.log(monsterData);
             setCreature('');
-            setImage('');
+            setImage('https://images.unsplash.com/photo-1554727225-ee66ff0a1bc5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1370&q=80');
             setCampaign('');
             setHitpoints('');
             setArmorclass('');
             setSpeed('');
             setRating('');
             setDescription('');
-            props.fetchMonsters();//Fixed typo
+            props.fetchMonsters();
         })
     }
 
@@ -71,7 +71,7 @@ const MonsterCreate = (props) => {
             <FormGroup>
 
                 <Label htmlFor="description">Description:</Label>
-                <Input type="textarea" maxLength="300" value={description} onChange={(e) => setDescription(e.target.value)}/>&nbsp; &nbsp;
+                <Input type="textarea"  value={description} onChange={(e) => setDescription(e.target.value)}/>&nbsp; &nbsp;
 
             </FormGroup>
             <Button color="success" type="submit">Click to Create</Button>

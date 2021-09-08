@@ -1,7 +1,5 @@
-import React, {useState, useEffect, ImageBackground} from "react";
-import MonsterCreate from "./MonsterCreate";
+import React, {useState, useEffect} from "react";
 import MonsterTable2 from "./MonsterCarousel";
-import MonsterEdit from "./MonsterEdit";
 import MonsterTable from "./MonsterTable"
 
 
@@ -9,8 +7,9 @@ const MonsterIndex = (props) => {
     const [monsters, setMonsters] = useState([]);
     const [updateActive, setUpdateActive] = useState(false);
     const [monsterToUpdate, setMonsterToUpdate] = useState({});
-    const fetchMonstersUrl = "http://localhost:4000/my-monsters/"
 
+    const fetchMonstersUrl = "http://localhost:4000/my-monsters/"
+    
 
 
     const fetchMonsters = () => {
@@ -46,36 +45,14 @@ const MonsterIndex = (props) => {
 
     return(
         <div className="mainDiv" >
-            {/* <div className="overlay" style={{background: `url(${BackgroundImage})`, backgroundRepeat: 'no-repeat', width: '250px' }}> */}
-                
-            {/* </div> */}
+        
+            {props.createEdit ? <MonsterTable monsters={monsters} editUpdateMonster={editUpdateMonster} updateOn={updateOn} fetchMonsters={fetchMonsters} token={props.token} monsterToUpdate={monsterToUpdate} updateOff={updateOff} updateActive={updateActive} /> :<MonsterTable2 monsters={monsters} editUpdateMonster={editUpdateMonster} updateOn={updateOn} fetchMonsters={fetchMonsters} token={props.token}/>}
+    
             
 
-            <MonsterTable2 monsters={monsters} editUpdateMonster={editUpdateMonster} updateOn={updateOn} fetchMonsters={fetchMonsters} token={props.token}/>
-
-            
-            {updateActive ? <MonsterEdit monsterToUpdate={monsterToUpdate} updateOff={updateOff} token={props.token} fetchMonsters=
-            {fetchMonsters}/> : <></>}
-            {/* <MonsterCreate fetchMonsters={fetchMonsters} token={props.token}/> */}
-            <MonsterTable monsters={monsters} editUpdateMonster={editUpdateMonster} updateOn={updateOn} fetchMonsters={fetchMonsters} token={props.token}/>
         </div>
 
     )
 }
 
 export default MonsterIndex;
-
-            {/* <MonsterCaro monsters={monsters} editUpdateMonster={editUpdateMonster} updateOn={updateOn} fetchMonsters={fetchMonsters} token={props.token}/> */}
-            // <MonsterTable monsters={monsters} editUpdateMonster={editUpdateMonster} updateOn={updateOn} fetchMonsters={fetchMonsters} token={props.token}/>
-
-
-            // {/* <MonsterCaro monsters={monsters} editUpdateMonster={editUpdateMonster} updateOn={updateOn} fetchMonsters={fetchMonsters} token={props.token}/> */}
-            // <MonsterTable monsters={monsters} editUpdateMonster={editUpdateMonster} updateOn={updateOn} fetchMonsters={fetchMonsters} token={props.token}/>
-
-
-
-
-
-            // {/* <MonsterCaro monsters={monsters} editUpdateMonster={editUpdateMonster} updateOn={updateOn} fetchMonsters={fetchMonsters} token={props.token}/> */}
-            // <MonsterTable monsters={monsters} editUpdateMonster={editUpdateMonster} updateOn={updateOn} fetchMonsters={fetchMonsters} token={props.token}/>
-
