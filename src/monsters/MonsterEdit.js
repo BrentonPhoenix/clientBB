@@ -72,7 +72,6 @@ const MonsterEdit = (props) => {
                         <div className="buttons">
                     <Button color="primary" type="submit">Update Monster!</Button>
                     <Button className="close-button" close><span aria-hidden="true">Close</span></Button>
-                    {/* <Button className="close-button" close/> */}
                     </div>
                 </Form>
             </ModalBody>

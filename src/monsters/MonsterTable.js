@@ -29,7 +29,7 @@ const deleteMonster = (monster) => {
 const monsterMapper = () =>{
     return props.monsters.map((monster)=>{
         return(
-            <List type="unstyled">
+            <List className="divCreate" type="unstyled">
                 <br />
                 <ul>
                     <li className="monster">Monster Name:  {monster.creature}</li> &nbsp; 
@@ -54,10 +54,6 @@ const monsterMapper = () =>{
                             <ul>
                             <li>{monster.description}</li>
                             </ul>
-                        <li className="url">Monster Image URL:  </li>
-                            <ul>
-                            <li>{monster.image}</li>
-                            </ul>
                         &nbsp; &nbsp;
                     </ul>    
                     
@@ -74,8 +70,8 @@ const monsterMapper = () =>{
 
 return(
     <div>
-        <MonsterCreate/>
-
+        <MonsterCreate token={props.token} fetchMonsters={props.fetchMonsters}/>
+        {props.updateActive ? <MonsterEdit monsters={props.monsters} editUpdateMonster={props.editUpdateMonster} updateOn={props.updateOn} fetchMonsters={props.fetchMonsters} token={props.token} monsterToUpdate={props.monsterToUpdate} updateOff={props.updateOff} updateActive={props.updateActive} /> : <></>}
         &nbsp; &nbsp;
     <h2>My Monsters</h2>
     <hr/>
@@ -85,59 +81,3 @@ return(
 }
 
 export default MonsterTable;
-
-// import React from "react";
-// import {Button} from "reactstrap"
-
-
-// const MonsterTable = (props) =>{
-// const deleteMonster = (monster) => {
-//     // console.log(monsterId)
-
-//     const deleteMonsterUrl = `http://localhost:4000/my-monsters/delete/${monster.id}`;
-//     // const accessToken = localStorage.getItem('sessionToken')
-
-//     fetch(deleteMonsterUrl, {
-//         method: 'DELETE',
-//         headers: new Headers ({
-//             "Content-Type": "application/json",
-//             "Authorization": `Bearer ${props.token}`
-//         })
-//     })
-//     .then(response => response.json())
-//     .then(data => {
-//         console.log(data);
-//         {props.fetchMonsters()};
-//     })
-//     .catch(err => console.log(err))
-// }
-
-// const monsterMapper = () =>{
-//     return props.monsters.map((monster, index)=>{
-//         return(
-//             <div>
-//                 {/* Do we need this key? */}
-//                 key={index}
-//                 {monster.id}
-//                 {monster.creature}
-//                 {monster.image}
-//                 <Button color="#03FE2A" onClick={()=> {props.editUpdateMonster(monster); props.updateOn()}}>Update Monster</Button>
-//                 <Button color="#193A73" onClick={()=> {deleteMonster(monster)}}>Delete Monster</Button>
-//             </div>
-
-//         )
-//     })
-// }
-
-// return(
-//     <>
-//     <h2>My Monsters</h2>
-//     <hr/>
-//     <h3>Monster Name</h3>
-//     <h4>img link</h4>
-//     {monsterMapper()}
-//     </>
-// )
-// }
-
-
