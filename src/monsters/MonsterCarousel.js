@@ -32,7 +32,7 @@ const MonsterTable2 = (props) =>{
 const slides = props.monsters.map((monster)=>{
         return(
 
-                    <CarouselItem
+            <CarouselItem
             onExiting={() => setAnimating(true)}
             onExited={() => setAnimating(false)}
             key={monster.id}>

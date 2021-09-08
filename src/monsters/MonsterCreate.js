@@ -71,7 +71,7 @@ const MonsterCreate = (props) => {
             <FormGroup>
 
                 <Label htmlFor="description">Description:</Label>
-                <Input type="textarea" maxLength="300" value={description} onChange={(e) => setDescription(e.target.value)}/>&nbsp; &nbsp;
+                <Input type="textarea"  value={description} onChange={(e) => setDescription(e.target.value)}/>&nbsp; &nbsp;
 
             </FormGroup>
             <Button color="success" type="submit">Click to Create</Button>
