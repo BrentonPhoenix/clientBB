@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import {Button, Form, FormGroup, Label, Input} from 'reactstrap';
+import APIURL from "../helpers/environment";
 
 const MonsterCreate = (props) => {
     const [creature, setCreature] = useState('');
@@ -13,7 +14,7 @@ const MonsterCreate = (props) => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        fetch('http://localhost:4000/my-monsters/create', {
+        fetch(`${APIURL}/my-monsters/create`, {
             method: 'POST',
             body: JSON.stringify({monster: {creature: creature, image: image, campaign: campaign, hitpoints: hitpoints, armorclass: armorclass, speed: speed, rating: rating, description: description}}),
             headers: new Headers({

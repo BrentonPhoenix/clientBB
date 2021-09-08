@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import { Button, Form, FormGroup, Label, Input, Modal, ModalHeader, ModalBody } from 'reactstrap';
-
+import APIURL from "../helpers/environment";
 const MonsterEdit = (props) => {
     const[editcreature, setEditCreature] = useState(props.monsterToUpdate.creature);
     const[editimage, setEditImage] = useState(props.monsterToUpdate.image);
@@ -15,7 +15,7 @@ const MonsterEdit = (props) => {
 
     const monsterUpdate = (event, monster) => {
         event.preventDefault();
-        fetch(`http://localhost:4000/my-monsters/update/${props.monsterToUpdate.id}`, {
+        fetch(`${APIURL}/my-monsters/update/${props.monsterToUpdate.id}`, {
             method: 'PUT',
             body: JSON.stringify({monster: {creature: editcreature, image: editimage, campaign: editcampaign, hitpoints: edithitpoints, armorclass: editarmorclass, speed: editspeed, rating: editrating, description: editdescription}}),
             headers: new Headers({

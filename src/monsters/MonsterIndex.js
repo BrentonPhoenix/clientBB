@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from "react";
 import MonsterTable2 from "./MonsterCarousel";
 import MonsterTable from "./MonsterTable"
+import APIURL from "../helpers/environment";
 
 
 const MonsterIndex = (props) => {
@@ -8,7 +9,7 @@ const MonsterIndex = (props) => {
     const [updateActive, setUpdateActive] = useState(false);
     const [monsterToUpdate, setMonsterToUpdate] = useState({});
 
-    const fetchMonstersUrl = "http://localhost:4000/my-monsters/"
+    const fetchMonstersUrl = `${APIURL}/my-monsters/`
     
 
 

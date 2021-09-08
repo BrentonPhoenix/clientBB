@@ -2,13 +2,14 @@ import MonsterCreate from "./MonsterCreate";
 import React from "react";
 import {Button, List, } from "reactstrap"
 import MonsterEdit from "./MonsterEdit";
+import APIURL from "../helpers/environment";
 
 const MonsterTable = (props) =>{
 const deleteMonster = (monster) => {
 
 
 
-    const deleteMonsterUrl = `http://localhost:4000/my-monsters/delete/${monster.id}`;
+    const deleteMonsterUrl = `${APIURL}/my-monsters/delete/${monster.id}`;
 
 
     fetch(deleteMonsterUrl, {
